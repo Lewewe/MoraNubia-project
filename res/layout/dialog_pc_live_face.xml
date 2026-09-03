@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_camera" android:layout_width="@dimen/live_pc_surface_width" android:layout_height="@dimen/live_pc_surface_height" android:layout_marginStart="@dimen/live_mobile_face_margin_right">
+        <SurfaceView android:layout_gravity="start|bottom" android:id="@id/cameraview" android:layout_width="@dimen/ns_110_dp" android:layout_height="@dimen/ns_180_dp" />
+        <ImageView android:layout_gravity="end|top" android:id="@id/iv_close" android:padding="@dimen/live_mobile_face_close_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/live_pc_face_close" />
+        <ImageView android:layout_gravity="start|bottom" android:id="@id/iv_switch_camera" android:layout_width="@dimen/ns_110_dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/live_mobile_face_switch_camera_margin_bottom" android:src="@mipmap/live_pc_face_switch_camera" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/item_layout" android:layout_width="match_parent" android:layout_height="@dimen/ns_306_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.nubia.redmagickyi.guide.view.RoundImageView android:id="@id/item_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_marginStart="@dimen/ns_4_dp" app:boarderColor="@color/purple_1F4E3DA5" app:boarderWidth="@dimen/ns_0p5_dp" app:radius="@dimen/ns_4_dp" />
+    <ImageView android:layout_gravity="start|top" android:id="@id/newadd_image" android:background="@mipmap/mainpage_newadd_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_8_dp" />
+    <FrameLayout android:layout_gravity="end|top" android:background="@drawable/dancestudio_time_bg" android:layout_width="@dimen/ns_18_dp" android:layout_height="@dimen/ns_18_dp" android:layout_marginTop="@dimen/ns_6_dp" android:layout_marginEnd="@dimen/ns_6_dp">
+        <ImageView android:layout_gravity="center" android:background="@drawable/svg_ic_mojizhuye_play" android:layout_width="@dimen/ns_14_dp" android:layout_height="@dimen/ns_14_dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/ns_48_dp" android:layout_marginStart="@dimen/ns_4_dp">
+        <cn.nubia.redmagickyi.guide.view.RoundImageView android:id="@id/tv_title_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:boarderColor="@color/purple_1F4E3DA5" app:boarderWidth="@dimen/ns_0p5_dp" app:radius="@dimen/ns_4_dp" />
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_12_dp" android:textColor="@color/white_FFFFFFFF" android:layout_gravity="start|bottom" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_10_dp" android:layout_marginStart="@dimen/ns_8_dp" android:layout_marginEnd="@dimen/ns_8_dp" />
+    </FrameLayout>
+</FrameLayout>

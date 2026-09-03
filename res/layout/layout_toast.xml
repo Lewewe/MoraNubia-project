@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/toast_text" android:textColor="@color/toast_text" android:id="@id/tv_toast" android:background="@drawable/toast_bg" android:paddingTop="@dimen/toast_padding_top" android:paddingBottom="@dimen/toast_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/toast_padding_left" android:paddingEnd="@dimen/toast_padding_right"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

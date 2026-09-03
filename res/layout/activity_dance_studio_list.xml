@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end|top" android:id="@id/iv_close" android:background="@drawable/dance_studio_list_close_icon_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dance_studio_list_close_margin_top" android:layout_marginBottom="@dimen/dance_studio_list_close_margin_bottom" android:layout_marginEnd="@dimen/dance_studio_list_close_margin_right" />
+    <cn.nubia.redmagickyi.mainpage.dancestudio.view.NestContainer android:id="@id/layout_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dance_studio_list_recyclerview_margin_left_portait" android:layout_marginEnd="@dimen/dance_studio_list_recyclerview_margin_right_portait" />
+</LinearLayout>

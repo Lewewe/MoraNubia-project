@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/ns_44_dp" android:layout_centerVertical="true">
+        <ImageView android:id="@id/wifi_logo" android:layout_width="@dimen/ns_24_dp" android:layout_height="@dimen/ns_24_dp" android:src="@drawable/svg_ic_wifi" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_16_dp" />
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_18_dp" android:textColor="@color/purple_D94E3DA5" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/wifi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:layout_weight="1.0" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_12_dp" android:layout_marginEnd="@dimen/ns_12_dp" android:layout_toEndOf="@id/wifi_logo" />
+        <ImageView android:id="@id/wifi_cheeck" android:background="@drawable/svg_checkbox_on" android:visibility="gone" android:layout_width="@dimen/ns_24_dp" android:layout_height="@dimen/ns_24_dp" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_20_dp" android:layout_alignParentEnd="true" />
+    </LinearLayout>
+</RelativeLayout>

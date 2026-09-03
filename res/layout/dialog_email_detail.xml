@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/ns_312_dp" android:layout_height="@dimen/ns_318_dp" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ns_9_dp">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/btn_delete_this_read" android:layout_width="@dimen/ns_88_dp" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/ns_20_dp" android:layout_height="@dimen/ns_20_dp" android:src="@drawable/svg_ic_mojitongxun_delete" android:layout_centerVertical="true" />
+            <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_14_dp" android:textColor="@color/wthite_ff" android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/ns_18_dp" android:minWidth="0.0dp" android:minHeight="0.0dp" android:text="@string/mail_delete_this_read" android:shadowRadius="1.0" app:defaultFontTypeface="true" app:shadowColor="@color/red_FFF76666" app:shadowX="@dimen/ns_1_dp" app:shadowY="@dimen/ns_1_dp" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_achievement_bar_close" android:background="@drawable/svg_ic_close" android:layout_width="@dimen/ns_24_dp" android:layout_height="@dimen/ns_24_dp" android:layout_marginStart="@dimen/ns_176_dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:background="@mipmap/bg_dialog_maildetail" android:layout_width="@dimen/ns_312_dp" android:layout_height="@dimen/ns_290_dp" android:layout_marginTop="@dimen/ns_28_dp">
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/white_FFFFFFFF" android:id="@id/tv_content_header_title" android:layout_width="@dimen/ns_256_dp" android:layout_height="@dimen/ns_22_dp" android:layout_marginTop="@dimen/ns_28_dp" android:layout_marginStart="@dimen/ns_28_dp" app:defaultFontTypeface="true" />
+        <cn.nubia.redmagickyi.view.RedmagicKyiWebview android:scrollbarSize="@dimen/ns_0_dp" android:scrollbarStyle="outsideOverlay" android:id="@id/tv_mail_content" android:scrollbars="none" android:layout_width="@dimen/ns_256_dp" android:layout_height="@dimen/ns_198_dp" android:layout_marginTop="@dimen/ns_18_dp" android:overScrollMode="never" android:layout_marginStart="@dimen/ns_28_dp" />
+    </LinearLayout>
+</RelativeLayout>

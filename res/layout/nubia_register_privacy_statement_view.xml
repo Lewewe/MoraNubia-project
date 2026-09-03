@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/camera_skill_parent" android:background="@color/color_black_54" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/ns_0_dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/webview_ll" android:layout_width="match_parent" android:layout_height="@dimen/ns_550_dp" android:layout_marginTop="@dimen/ns_50_dp" android:layout_marginStart="@dimen/ns_20_dp" android:layout_marginEnd="@dimen/ns_20_dp">
+            <cn.nubia.redmagickyi.view.RedmagicKyiWebview android:id="@id/webview" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/ns_500_dp" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/close_btn" android:background="@mipmap/gb" android:layout_width="@dimen/ns_25_dp" android:layout_height="@dimen/ns_25_dp" android:layout_marginTop="@dimen/ns_10_dp" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:background="@mipmap/divider" android:layout_width="match_parent" android:layout_height="2.0px" />
+</LinearLayout>

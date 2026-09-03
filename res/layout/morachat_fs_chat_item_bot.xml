@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ns_11_dp" android:textColor="@color/morachat_fs_chat_time_text" android:layout_gravity="center_horizontal" android:id="@id/tv_time" android:paddingTop="@dimen/ns_12_dp" android:paddingBottom="@dimen/ns_8_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16:44" android:paddingEnd="@dimen/ns_12_dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:id="@id/layout_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/ns_12_dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_time">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/ns_0_dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <cn.nubia.redmagickyi.morachat.fullscreen.chat.view.pop.BotLayout android:id="@id/layout_session" android:paddingTop="@dimen/ns_9_dp" android:paddingBottom="@dimen/ns_12_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ns_16_dp" app:layout_constraintEnd_toStartOf="@id/layout_options" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <include android:id="@id/tv_loading" android:layout_width="@dimen/ns_48_dp" android:layout_height="@dimen/ns_26_dp" android:layout_marginEnd="@dimen/ns_16_dp" layout="@layout/morachat_loading_bot_idel" />
+                    <TextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/morachat_fs_chat_bot_text" android:id="@id/tv_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_3_dp" android:lineSpacingExtra="@dimen/ns_4_dp" android:textIsSelectable="true" android:layout_marginEnd="@dimen/ns_16_dp" android:breakStrategy="high_quality" android:fallbackLineSpacing="false" />
+                    <TextView android:textSize="@dimen/ns_11_dp" android:textColor="@color/morachat_fs_chat_bot_tips_text" android:id="@id/tv_ai_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_12_dp" android:text="@string/morachat_fs_chat_ai_tip_warn_redmagic" android:layout_below="@id/tv_receive" android:layout_marginEnd="@dimen/ns_16_dp" />
+                </RelativeLayout>
+            </cn.nubia.redmagickyi.morachat.fullscreen.chat.view.pop.BotLayout>
+            <LinearLayout android:id="@id/iv_options_more_right" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ns_32_dp" android:layout_marginTop="@dimen/ns_8_dp">
+                <LinearLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <cn.nubia.redmagickyi.morachat.fullscreen.chat.view.pop.BotLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ns_8_dp" app:pop_radius="@dimen/ns_18_dp" app:pop_shadowWidth="@dimen/ns_8_dp">
+                        <ImageView android:id="@id/iv_speech" android:padding="@dimen/ns_6_dp" android:layout_width="@dimen/ns_32_dp" android:layout_height="@dimen/ns_32_dp" android:src="@drawable/svg_ic_morachat_action_play" />
+                    </cn.nubia.redmagickyi.morachat.fullscreen.chat.view.pop.BotLayout>
+                </LinearLayout>
+                <cn.nubia.redmagickyi.morachat.fullscreen.chat.view.pop.BotLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ns_8_dp" app:pop_radius="@dimen/ns_18_dp" app:pop_shadowWidth="@dimen/ns_8_dp">
+                    <ImageView android:id="@id/iv_copy" android:padding="@dimen/ns_6_dp" android:layout_width="@dimen/ns_32_dp" android:layout_height="@dimen/ns_32_dp" android:src="@drawable/svg_ic_morachat_action_copy" />
+                </cn.nubia.redmagickyi.morachat.fullscreen.chat.view.pop.BotLayout>
+                <cn.nubia.redmagickyi.morachat.fullscreen.chat.view.pop.BotLayout android:id="@id/ll_thumb_status" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/ns_12_dp" android:paddingEnd="@dimen/ns_12_dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:pop_radius="@dimen/ns_18_dp" app:pop_shadowWidth="@dimen/ns_8_dp">
+                    <ImageView android:id="@id/iv_like" android:layout_width="@dimen/ns_20_dp" android:layout_height="@dimen/ns_20_dp" android:src="@drawable/svg_ic_morachat_action_thumb_up" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView android:id="@id/iv_dislike" android:layout_width="@dimen/ns_20_dp" android:layout_height="@dimen/ns_20_dp" android:src="@drawable/svg_ic_morachat_action_thumb_down" android:layout_marginStart="@dimen/ns_16_dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/iv_like" app:layout_constraintTop_toTopOf="parent" />
+                </cn.nubia.redmagickyi.morachat.fullscreen.chat.view.pop.BotLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <cn.nubia.redmagickyi.morachat.fullscreen.chat.view.pop.BotLayout android:id="@id/layout_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ns_4_dp" app:pop_radius="@dimen/ns_18_dp" app:pop_shadowWidth="@dimen/ns_8_dp">
+                <ImageView android:padding="@dimen/ns_2_dp" android:layout_width="@dimen/ns_24_dp" android:layout_height="@dimen/ns_24_dp" android:src="@drawable/svg_ic_morachat_action_more_vert" />
+            </cn.nubia.redmagickyi.morachat.fullscreen.chat.view.pop.BotLayout>
+            <Space android:id="@id/space_options_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/ns_32_dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:name="vector" android:height="@dimen/alarm_digital_clock_layout_hint_slide_img_height" android:width="@dimen/alarm_digital_clock_layout_hint_slide_img_width" android:viewportWidth="24.0" android:viewportHeight="46.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="group_1">
+        <path android:name="path_1" android:fillColor="@color/alarm_digital_clock_layout_hint_slide_img_strokeWidth" android:pathData="M 18.002 38.999 C 18.002 39.203 17.925 39.406 17.77 39.56 C 17.46 39.87 16.957 39.87 16.647 39.56 L 12.001 34.916 L 7.355 39.56 C 7.045 39.87 6.542 39.87 6.232 39.56 C 5.923 39.251 5.923 38.748 6.232 38.44 L 11.439 33.233 C 11.749 32.922 12.252 32.922 12.562 33.233 L 17.769 38.44 C 17.925 38.593 18.002 38.795 18.002 38.999 Z" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    </group>
+    <group android:name="group_2">
+        <path android:name="path_2" android:fillColor="@color/alarm_digital_clock_layout_hint_slide_img_strokeWidth" android:pathData="M 17.769 44.44 L 12.562 39.233 C 12.252 38.922 11.749 38.922 11.439 39.233 L 6.232 44.44 C 5.923 44.749 5.923 45.252 6.232 45.56 C 6.542 45.87 7.045 45.87 7.355 45.56 L 12.001 40.916 L 16.647 45.56 C 16.957 45.87 17.46 45.87 17.77 45.56 C 17.925 45.406 18.002 45.203 18.002 44.999 C 18.001 44.797 17.924 44.594 17.769 44.44 Z" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    </group>
+    <group android:name="group_3">
+        <path android:name="path_3" android:fillColor="@color/alarm_digital_clock_layout_hint_slide_img_strokeWidth" android:pathData="M 18.002 38.999 C 18.002 39.203 17.925 39.406 17.77 39.56 C 17.46 39.87 16.957 39.87 16.647 39.56 L 12.001 34.916 L 7.355 39.56 C 7.045 39.87 6.542 39.87 6.232 39.56 C 5.923 39.251 5.923 38.748 6.232 38.44 L 11.439 33.233 C 11.749 32.922 12.252 32.922 12.562 33.233 L 17.769 38.44 C 17.925 38.593 18.002 38.795 18.002 38.999 Z" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    </group>
+    <group android:name="group_4">
+        <path android:name="path_4" android:fillColor="@color/alarm_digital_clock_layout_hint_slide_img_strokeWidth" android:pathData="M 17.769 44.44 L 12.562 39.233 C 12.252 38.922 11.749 38.922 11.439 39.233 L 6.232 44.44 C 5.923 44.749 5.923 45.252 6.232 45.56 C 6.542 45.87 7.045 45.87 7.355 45.56 L 12.001 40.916 L 16.647 45.56 C 16.957 45.87 17.46 45.87 17.77 45.56 C 17.925 45.406 18.002 45.203 18.002 44.999 C 18.001 44.797 17.924 44.594 17.769 44.44 Z" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    </group>
+</vector>

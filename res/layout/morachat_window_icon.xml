@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="@dimen/morachat_window_icon_size_large" android:layout_height="@dimen/morachat_window_icon_size_large">
+        <cn.nubia.redmagickyi.morachat.window.redmagickyi.view.icon.IconBackgroundView android:id="@id/surface_background" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <cn.nubia.redmagickyi.unity.view.UnitySurfaceView android:id="@id/surface_unity" android:layout_width="1080.0px" android:layout_height="2400.0px" android:layout_marginLeft="-422.0px" android:layout_marginTop="-1084.0px" />
+        <cn.nubia.redmagickyi.morachat.window.redmagickyi.view.icon.IconForgroundView android:id="@id/surface_forground" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</FrameLayout>

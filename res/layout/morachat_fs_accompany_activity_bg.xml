@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/view_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SurfaceView android:id="@id/surface_background" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="80.0" />
+        <cn.nubia.redmagickyi.unity.view.UnitySurfaceView android:id="@id/unityview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <View android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="80.0" />
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="end|top" android:orientation="horizontal" android:id="@id/layout_camera" android:layout_width="wrap_content" android:layout_height="@dimen/ns_24_dp" android:layout_marginTop="@dimen/ns_46_dp" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_18_dp">
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="center_vertical" android:id="@id/iv_camera" android:layout_width="@dimen/ns_20_dp" android:layout_height="@dimen/ns_20_dp" android:src="@drawable/svg_ic_morachat_company_cameraoff" />
+        <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_14_dp" android:layout_gravity="center_vertical" android:id="@id/tv_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morachat_fs_accompany_camera" app:defaultFontTypeface="true" app:shadowColor="@color/gray_FF8A8A8A" app:strokeColor="@color/gray_FF8A8A8A" />
+    </LinearLayout>
+    <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_12_dp" android:textColor="@color/white_FFFFFFFF" android:gravity="center" android:layout_gravity="end" android:id="@id/tv_camera_tips" android:background="@mipmap/app_toast" android:visibility="gone" android:layout_width="@dimen/ns_198_dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_70_dp" android:text="@string/morachat_fs_accompany_camera_tips" app:defaultFontTypeface="true" />
+    <include android:layout_gravity="center" android:layout_width="@dimen/loading_bg_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_30_dp" layout="@layout/layout_loading" />
+    <ImageView android:id="@id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_32_dp" android:src="@mipmap/morachat_btn_quit" />
+    <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:id="@id/iv_back_abroad" android:visibility="gone" android:layout_width="@dimen/ns_54_dp" android:layout_height="@dimen/ns_52_dp" android:layout_marginTop="@dimen/ns_32_dp" android:src="@drawable/svg_btn_back" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/pop_bot" android:background="@mipmap/morachat_fs_accompany_bot_pop" android:visibility="gone" android:layout_width="@dimen/ns_65_dp" android:layout_height="@dimen/ns_40_dp" android:transformPivotX="@dimen/ns_0_dp" android:transformPivotY="@dimen/ns_40_dp">
+        <ImageView android:layout_gravity="center" android:id="@id/pop_bot_thinking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/morachat_fs_accompany_bot_thinking" />
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/pop_bot_speaking" android:visibility="gone" android:layout_width="@dimen/ns_35_dp" android:layout_height="@dimen/ns_30_dp" android:forceDarkAllowed="false" app:lottie_autoPlay="true" app:lottie_fileName="accompany_voice_loop_motion_bot.json" app:lottie_loop="true" app:lottie_progress="0.0" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|bottom" android:id="@id/pop_user" android:background="@mipmap/morachat_fs_accompany_user_pop" android:visibility="gone" android:layout_width="@dimen/ns_72_dp" android:layout_height="@dimen/ns_40_dp" android:layout_marginBottom="@dimen/ns_16_dp" android:transformPivotX="@dimen/ns_36_dp" android:transformPivotY="@dimen/ns_20_dp">
+        <ImageView android:layout_gravity="center" android:id="@id/pop_user_to_speak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_ic_morachat_tap_to_speak" />
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/pop_user_speaking" android:visibility="gone" android:layout_width="@dimen/ns_35_dp" android:layout_height="@dimen/ns_30_dp" android:forceDarkAllowed="false" app:lottie_autoPlay="true" app:lottie_fileName="accompany_vocie_loop_motion_user.json" app:lottie_loop="true" app:lottie_progress="0.0" />
+    </FrameLayout>
+</FrameLayout>

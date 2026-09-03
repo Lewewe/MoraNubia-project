@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:id="@id/unityview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/launcher_preview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@id/wallpaper_foreground" android:background="@mipmap/wallpaper_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_wallpaperhub_preview_toolbar" />
+    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeButton android:id="@id/setting" android:visibility="visible" android:layout_marginBottom="@dimen/wallpaperhub_preview_commit_margin_bottom" android:text="@string/wallpaper_setting" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/redmagic_button_commit" />
+    <Switch android:id="@id/switch_preview" android:background="@mipmap/wallpaperhub_preview_switch_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wallpaperhub_preview_commit_margin_bottom" android:thumb="@null" android:layout_alignParentBottom="true" android:track="@null" android:layout_marginStart="@dimen/ns_32_dp" android:layout_toEndOf="@id/setting" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_gravity="center" android:layout_width="@dimen/loading_bg_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_30_dp" layout="@layout/layout_loading" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.nubia.redmagickyi.morachat.fullscreen.chat.view.gallery.core.HackyViewPager android:id="@id/vp_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textColor="#ffffff" android:gravity="center" android:id="@id/tv_indicator" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ns_30_dp" android:layout_marginTop="@dimen/ns_40_dp" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ns_20_dp">
+        <ImageView android:id="@id/iv_download" android:visibility="gone" android:layout_width="@dimen/ns_40_dp" android:layout_height="@dimen/ns_40_dp" android:src="@drawable/svg_pic_morachat_picdownload" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</merge>

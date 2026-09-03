@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nubia_user_layout_toolbar" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/ns_20_dp" android:layout_marginEnd="@dimen/ns_20_dp">
+        <TextView android:textSize="@dimen/ns_20_dp" android:id="@id/remind_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_27_dp" />
+        <TextView android:textSize="@dimen/ns_24_dp" android:textColor="#0072ff" android:gravity="center" android:id="@id/go_mail2" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_21_dp" android:text="@string/phone_verify" />
+        <EditText android:textSize="@dimen/ns_14_sp" android:textColor="@color/care_black_100" android:textColorHint="#d2d2d2" android:id="@id/new_password" android:background="@mipmap/ns_button_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_30_dp" android:hint="@string/new_passwd" android:password="true" android:singleLine="true" android:maxLength="16" android:inputType="textPassword" android:paddingStart="@dimen/ns_12_dp" />
+        <EditText android:textSize="@dimen/ns_14_sp" android:textColor="@color/care_black_100" android:textColorHint="#d2d2d2" android:id="@id/verify_code_et" android:background="@mipmap/ns_button_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_21_dp" android:hint="@string/plz_input_verify_code" android:singleLine="true" android:inputType="number" android:paddingStart="@dimen/ns_12_dp" />
+        <Button android:textSize="@dimen/ns_20_dp" android:textColor="@color/ark_color_white" android:id="@id/confirm_btn" android:background="@drawable/ns_button_red_selector" android:layout_width="match_parent" android:layout_height="@dimen/ns_36_dp" android:layout_marginTop="@dimen/ns_21_dp" android:text="@string/confirm" />
+        <Button android:textSize="@dimen/ns_16_sp" android:gravity="center" android:id="@id/count_down" android:background="@drawable/ns_button_bg" android:layout_width="match_parent" android:layout_height="@dimen/ns_36_dp" android:layout_marginTop="@dimen/ns_21_dp" />
+    </LinearLayout>
+</LinearLayout>

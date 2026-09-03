@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end" android:id="@id/close" android:layout_width="@dimen/ns_24_dp" android:layout_height="@dimen/ns_24_dp" android:layout_marginTop="@dimen/ns_60_dp" android:src="@drawable/svg_ic_close" android:layout_marginEnd="@dimen/ns_60_dp" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/ns_70_dp" android:paddingBottom="@dimen/ns_70_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_10_dp" android:layout_marginStart="@dimen/ns_110_dp" android:layout_marginEnd="@dimen/ns_110_dp">
+        <ImageView android:id="@id/pc_guide_bg" android:layout_width="@dimen/ns_280_dp" android:layout_height="@dimen/ns_158_dp" android:src="@drawable/svg_pic_mojizhibo_pczhibo_figure1" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_6_dp" android:layout_marginStart="@dimen/ns_20_dp">
+            <ScrollView android:scrollbarSize="@dimen/scrollbar_width" android:scrollbarThumbVertical="@drawable/scrollbar_thumb" android:scrollbarTrackVertical="@drawable/scrollbar_bg" android:scrollbarStyle="outsideOverlay" android:layout_gravity="start" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="0.0dp" android:minHeight="@dimen/ns_80_dp" android:layout_weight="1.0" android:overScrollMode="never">
+                <TextView android:textSize="@dimen/ns_12_dp" android:textColor="@color/white_FFFFFFFF" android:textColorLink="@color/purple_FFCFCEFF" android:autoLink="web" android:id="@id/guide_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </ScrollView>
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:id="@id/mobile_live" android:layout_marginTop="@dimen/ns_20_dp" android:text="@string/ar_start_live" style="@style/redmagic_button_commit" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/ar_redmagic_live_pc_guide_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ns_48_dp" android:layout_alignParentBottom="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_5_dp" android:layout_marginBottom="@dimen/ns_5_dp" android:minHeight="@dimen/ns_48_dp" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/ns_8_dp" android:layout_marginEnd="@dimen/ns_36_dp" android:layout_toEndOf="@id/iv_phone">
+            <TextView android:textSize="@dimen/ns_10_dp" android:textColor="@color/white_FFFFFFFF" android:layout_gravity="center_vertical" android:id="@id/bottom_guide_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/redmagic_ar_live_sub_text" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_phone" android:layout_width="@dimen/ns_48_dp" android:layout_height="@dimen/ns_70_dp" android:src="@drawable/svg_pic_mojizhibo_pczhibo_figure2" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/ns_162_dp" />
+    </RelativeLayout>
+</FrameLayout>

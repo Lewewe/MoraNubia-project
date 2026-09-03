@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.nubia.redmagickyi.morachat.window.gameagent.view.output.OperatorPanel android:id="@id/layout_operator" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_placehold" android:layout_width="1.0px" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/layout_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_39_dp" android:layout_marginTop="@dimen/ns_8_dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_caption" android:background="@mipmap/morachat_bg_floatingwindow_gameagent_talk" android:layout_width="match_parent" android:layout_height="@dimen/ns_40_dp" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_caption_talk" android:background="@drawable/svg_ic_floatingwindow_talk" android:layout_width="@dimen/ns_5_dp" android:layout_height="@dimen/ns_12_dp" android:layout_marginLeft="@dimen/ns_15_dp" />
+        <cn.nubia.redmagickyi.morachat.window.gameagent.view.output.OutputTextView android:layout_gravity="center_vertical" android:id="@id/tv_caption" android:layout_width="wrap_content" android:layout_height="@dimen/ns_24_dp" android:layout_marginLeft="@dimen/ns_24_dp" android:layout_marginRight="@dimen/ns_24_dp" />
+        <cn.nubia.redmagickyi.morachat.window.gameagent.view.output.OutputAiTipsView android:layout_gravity="bottom" android:id="@id/tv_ai_tips" android:layout_width="wrap_content" android:layout_height="@dimen/ns_8_dp" android:layout_marginLeft="@dimen/ns_24_dp" android:layout_marginRight="@dimen/ns_24_dp" android:layout_marginBottom="@dimen/ns_4_dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_40_dp" android:layout_marginTop="@dimen/ns_8_dp">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/iv_input" android:background="@drawable/morachat_gameagent_window_input_bg" android:layout_width="match_parent" android:layout_height="@dimen/ns_36_dp" android:layout_marginLeft="@dimen/ns_16_dp">
+            <cn.nubia.redmagickyi.morachat.window.gameagent.view.input.InputTextView android:layout_gravity="center_vertical" android:id="@id/tv_input" android:layout_width="wrap_content" android:layout_height="@dimen/ns_24_dp" android:layout_marginLeft="@dimen/ns_10_dp" android:layout_marginRight="@dimen/ns_10_dp" />
+        </FrameLayout>
+    </FrameLayout>
+</cn.nubia.redmagickyi.morachat.window.gameagent.view.output.OperatorPanel>

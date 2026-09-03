@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/wallpaperhub_toolbar_color_white_100" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.nubia.redmagickyi.view.pageslider.PageContainer android:id="@id/layout_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/layout_download_controller" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_wallpaperhub_preview_dynamic_download_controller" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeButton android:id="@id/setting" android:visibility="visible" android:layout_marginBottom="@dimen/wallpaperhub_preview_commit_margin_bottom" android:text="@string/wallpaper_hub_preview_setting" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/redmagic_button_commit" />
+        <Switch android:id="@id/switch_preview" android:background="@drawable/wallpaperhub_preview_btn_mute_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wallpaperhub_preview_mute_margin_bottom" android:thumb="@null" android:layout_alignParentBottom="true" android:track="@null" android:layout_marginStart="@dimen/ns_41_dp" android:layout_toEndOf="@id/setting" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/layout_error_panel" android:background="@mipmap/bg_otherpage" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/wallpaperhub_toolbar_header_height" layout="@layout/layout_mainpage_no_network" />
+    </FrameLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_wallpaperhub_preview_toolbar" />
+</FrameLayout>

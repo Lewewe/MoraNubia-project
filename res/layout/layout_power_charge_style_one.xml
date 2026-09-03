@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/power_charge_time_margin_top">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_time" android:background="@mipmap/power_charge_time_bg" android:layout_width="wrap_content" android:layout_height="@dimen/power_charge_time_height" />
+        <TextView android:textSize="@dimen/power_charge_time_text" android:textColor="@color/power_charge_time_text" android:gravity="center|bottom" android:layout_gravity="center|bottom" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/power_charge_time_min_height" android:singleLine="true" android:includeFontPadding="false" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/power_charge_battery_capacity_margin_top">
+        <ImageView android:gravity="center_horizontal" android:id="@id/img_battery_capacity" android:background="@mipmap/power_charge_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/power_charge_battery_capacity_bg_margin_top" android:layout_marginEnd="@dimen/power_charge_battery_capacity_bg_margin_right" />
+        <TextView android:textSize="@dimen/power_charge_battery_capacity_text" android:textColor="@color/power_charge_battery_capacity_text_gradient_begin" android:gravity="center_horizontal" android:id="@id/tv_battery_capacity" android:paddingTop="@dimen/power_charge_battery_capacity_text_margin_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:rotationX="-13.0" />
+        <ImageView android:layout_gravity="center|bottom" android:id="@id/img_charge_tips_normal" android:layout_width="wrap_content" android:layout_height="@dimen/power_charge_tips_height" android:layout_marginBottom="@dimen/power_charge_tips_normal_margin_top" android:src="@mipmap/power_charge_normal_icon" />
+        <ImageView android:layout_gravity="center|bottom" android:id="@id/img_charge_tips_neo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/power_charge_tips_height" android:layout_marginBottom="@dimen/power_charge_tips_neo_margin_top" android:src="@mipmap/power_charge_neo_icon" />
+        <ImageView android:layout_gravity="center|bottom" android:id="@id/img_charge_tips_max" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/power_charge_tips_height" android:layout_marginBottom="@dimen/power_charge_tips_max_margin_top" android:src="@mipmap/power_charge_max_icon" />
+    </FrameLayout>
+</LinearLayout>

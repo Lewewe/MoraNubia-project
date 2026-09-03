@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/warn_layout" android:background="@drawable/loading_bg" android:layout_width="@dimen/loading_warn_editor_width" android:layout_height="@dimen/loading_warn_editor_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/loading_warn_text" android:textColor="@color/loading_text" android:layout_gravity="center" android:id="@id/warn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ns_13_dp" android:layout_marginTop="@dimen/loading_text_margin_top" />
+</LinearLayout>

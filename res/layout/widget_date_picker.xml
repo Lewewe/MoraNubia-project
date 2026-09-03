@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/ns_132_dp" android:layout_marginTop="@dimen/ns_f2_dp" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.nubia.redmagickyi.guide.wheelview.WheelView android:layout_gravity="center" android:id="@id/wheelViewYear" android:layout_width="@dimen/ns_80_dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/ns_16_dp" />
+    <View android:layout_gravity="center_vertical" android:background="@color/purple_1F4E3DA5" android:layout_width="@dimen/ns_10_dp" android:layout_height="@dimen/ns_3_dp" android:layout_marginStart="@dimen/ns_4_dp" android:layout_marginEnd="@dimen/ns_4_dp" />
+    <cn.nubia.redmagickyi.guide.wheelview.WheelView android:layout_gravity="center" android:id="@id/wheelViewMonth" android:layout_width="@dimen/ns_50_dp" android:layout_height="match_parent" />
+    <View android:layout_gravity="center_vertical" android:background="@color/purple_1F4E3DA5" android:layout_width="@dimen/ns_10_dp" android:layout_height="@dimen/ns_3_dp" android:layout_marginStart="@dimen/ns_4_dp" android:layout_marginEnd="@dimen/ns_4_dp" />
+    <cn.nubia.redmagickyi.guide.wheelview.WheelView android:layout_gravity="center" android:id="@id/wheelViewDay" android:layout_width="@dimen/ns_50_dp" android:layout_height="match_parent" android:layout_marginEnd="@dimen/ns_16_dp" />
+</LinearLayout>

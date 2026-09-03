@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="@dimen/ns_340_dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ns_4_dp" android:layout_marginEnd="@dimen/ns_4_dp">
+        <ImageView android:id="@id/iv_background" android:background="@mipmap/livecalender_cardbg_normnal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/layout_right_root" android:layout_alignBottom="@id/layout_right_root" />
+        <cn.nubia.redmagickyi.livecalender.view.LeftLayout android:id="@id/layout_left" android:layout_width="@dimen/livecalender_item_left_size" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_5_dp" android:layout_marginBottom="@dimen/ns_5_dp" android:minHeight="@dimen/livecalender_item_left_size" android:layout_alignTop="@id/layout_right_root" android:layout_alignBottom="@id/layout_right_root" android:layout_marginStart="@dimen/ns_8_dp">
+            <ImageView android:id="@id/iv_left_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ImageView android:layout_gravity="center|bottom" android:id="@id/iv_left_fg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_36_dp" android:textColor="@color/white_FFF9F9FF" android:gravity="center" android:id="@id/tv_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_4p5_dp" android:layout_marginStart="@dimen/ns_4_dp" android:layout_marginEnd="@dimen/ns_4_dp" app:defaultFontTypeface="true" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/white_FFF9F9FF" android:gravity="center" android:id="@id/tv_week" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_39p5_dp" android:layout_marginStart="@dimen/ns_4_dp" android:layout_marginEnd="@dimen/ns_4_dp" app:defaultFontTypeface="true" />
+        </cn.nubia.redmagickyi.livecalender.view.LeftLayout>
+        <View android:id="@id/view_line" android:background="@drawable/livecalender_item_dash_line_normal_vertical" android:layout_width="@dimen/ns_1_dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_8_dp" android:layout_marginBottom="@dimen/ns_8_dp" android:layout_alignTop="@id/layout_right_root" android:layout_alignBottom="@id/layout_right_root" android:layerType="software" android:layout_marginStart="@dimen/ns_1p5_dp" android:layout_toEndOf="@id/layout_left" />
+        <FrameLayout android:id="@id/layout_right_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ns_78_dp" android:layout_toEndOf="@id/view_line" android:layout_alignParentEnd="true">
+            <cn.nubia.redmagickyi.livecalender.view.RightLayout android:id="@id/layout_right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_3_dp" android:layout_marginBottom="@dimen/ns_3_dp" android:layout_marginEnd="@dimen/ns_6_dp">
+                <cn.nubia.redmagickyi.view.RecyclerViewEmptySupport android:id="@id/rv_right" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </cn.nubia.redmagickyi.livecalender.view.RightLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

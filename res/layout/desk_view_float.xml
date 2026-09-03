@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_float_parent" android:layout_width="@dimen/ns_266_dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_float_parent_view" android:background="@mipmap/care_float_bg" android:layout_width="@dimen/ns_266_dp" android:layout_height="@dimen/ns_40_dp">
+        <RelativeLayout android:orientation="vertical" android:id="@id/head_view" android:layout_width="wrap_content" android:layout_height="@dimen/care_bubble_height">
+            <ImageView android:id="@id/iv_float_image_bg" android:layout_width="@dimen/ns_40_dp" android:layout_height="@dimen/ns_40_dp" android:src="@mipmap/care_massage_logo_bg" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_float_image" android:layout_width="@dimen/ns_28_dp" android:layout_height="@dimen/ns_28_dp" android:src="@mipmap/care_massage_logo" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:id="@id/iv_close_float" android:layout_width="@dimen/ns_28_dp" android:layout_height="@dimen/ns_28_dp" android:src="@drawable/care_voice_unmute" android:layout_centerVertical="true" android:layout_toEndOf="@id/head_view" />
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_10_dp" android:textColor="@color/massage_text" android:gravity="center_vertical" android:id="@id/tv_queue_index" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_11_dp" android:layout_marginEnd="@dimen/ns_11_dp" android:layout_toEndOf="@id/iv_close_float" />
+    </RelativeLayout>
+</RelativeLayout>

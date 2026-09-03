@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/redmagic_broadcast_scene_item_selector" android:layout_width="match_parent" android:layout_height="@dimen/ns_48_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress_play" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:progressDrawable="@drawable/redmagic_broacast_progress" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/ns_1_dp" style="?android:progressBarStyleHorizontal" />
+    <CheckBox android:id="@id/cb_scene" android:background="@null" android:layout_width="@dimen/ns_24_dp" android:layout_height="@dimen/ns_24_dp" android:button="@drawable/checkbox_selector" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_8_dp" android:layout_marginEnd="@dimen/ns_8_dp" />
+    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/redmagic_broadcast_scene_item_text" android:textColor="@color/purple_D94E3DA5" android:id="@id/tv_scene" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/redmagic_broadcast_scene_item_text_margin_right" android:layout_toStartOf="@id/iv_sound_icon" android:layout_toEndOf="@id/cb_scene" />
+    <ImageView android:id="@id/iv_sound_icon" android:background="@drawable/svg_ic_volume_playing" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_8_dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

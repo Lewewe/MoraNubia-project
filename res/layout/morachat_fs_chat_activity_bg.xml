@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/ll" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:background="@mipmap/morachat_fs_chat_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="90.0" />
+        <cn.nubia.redmagickyi.unity.view.UnitySurfaceView android:id="@id/unityview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

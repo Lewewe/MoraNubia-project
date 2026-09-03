@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/ns_93_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/layout_close" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/ns_190_dp" android:src="@mipmap/mainpage_header_bg" android:scaleType="centerCrop" />
+        <ImageView android:background="@drawable/mainpage_toppic_close_fg" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <cn.nubia.redmagickyi.guide.view.RoundImageView android:id="@id/iv_header_close_thumbnail" android:layout_width="@dimen/ns_40_dp" android:layout_height="@dimen/ns_40_dp" android:layout_marginTop="@dimen/ns_38_dp" android:foreground="@drawable/mainpage_header_thumbnail_fg" android:src="@mipmap/mainpage_header_thumbnail" android:layout_marginStart="@dimen/ns_64_dp" app:radius="@dimen/ns_40_dp" />
+    </FrameLayout>
+    <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_24_dp" android:textColor="@color/mainpage_header_text" android:id="@id/tv_header_close_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_43_dp" android:text="@string/mainpage_header_title" android:layout_marginStart="@dimen/ns_114_dp" app:defaultFontTypeface="true" />
+</FrameLayout>

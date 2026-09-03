@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@mipmap/redmagic_call_ringing_answer_decline_fg_bg" android:tint="@color/redmagic_call_ringing_decline_fg_bg_color"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

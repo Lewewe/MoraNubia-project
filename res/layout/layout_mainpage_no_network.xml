@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error_panel" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pic_mojitongxun_nowifi" android:scaleType="center" />
+    <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_20_dp" android:textColor="@color/mainpage_no_network_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_12_dp" android:text="@string/mail_no_network" app:defaultFontTypeface="true" />
+    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeButton android:layout_gravity="center" android:id="@id/btn_reload" android:layout_marginTop="@dimen/ns_20_dp" android:layout_marginBottom="@dimen/ns_20_dp" android:text="@string/mail_no_network_btn" style="@style/redmagic_button_commit" />
+</LinearLayout>

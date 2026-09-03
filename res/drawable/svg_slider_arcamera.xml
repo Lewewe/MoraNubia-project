@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/ns_24_dp" android:width="@dimen/ns_24_dp" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$svg_slider_arcamera__0" android:pathData="M12.667,3.385L19.128,7.115C19.54,7.353 19.794,7.793 19.794,8.27L19.794,15.73C19.794,16.207 19.54,16.647 19.128,16.885L12.667,20.615C12.254,20.853 11.746,20.853 11.333,20.615L4.872,16.885C4.46,16.647 4.206,16.207 4.206,15.73L4.206,8.27C4.206,7.793 4.46,7.353 4.872,7.115L11.333,3.385C11.746,3.147 12.254,3.147 12.667,3.385Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffff" android:pathData="M12.667,3.385L19.128,7.115C19.54,7.353 19.794,7.793 19.794,8.27L19.794,15.73C19.794,16.207 19.54,16.647 19.128,16.885L12.667,20.615C12.254,20.853 11.746,20.853 11.333,20.615L4.872,16.885C4.46,16.647 4.206,16.207 4.206,15.73L4.206,8.27C4.206,7.793 4.46,7.353 4.872,7.115L11.333,3.385C11.746,3.147 12.254,3.147 12.667,3.385ZM12,4.731L5.705,8.366L5.705,15.633L12,19.268L18.294,15.633L18.294,8.366L12,4.731Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

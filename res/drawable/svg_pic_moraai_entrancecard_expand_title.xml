@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="52.0dp" android:width="242.0dp" android:viewportWidth="242.0" android:viewportHeight="52.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#867af7" android:pathData="M216,2L6,2C4.343,2 3,3.343 3,5L3,47C3,48.657 4.343,50 6,50L216,50C229.255,50 240,39.255 240,26C240,12.745 229.255,2 216,2Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="#ffffff" android:pathData="M216,3L6,3C4.895,3 4,3.895 4,5L4,47C4,48.105 4.895,49 6,49L216,49C228.703,49 239,38.703 239,26C239,13.297 228.703,3 216,3Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="@drawable/$svg_pic_moraai_entrancecard_expand_title__0" android:pathData="M216,4L6,4C5.448,4 5,4.448 5,5L5,47C5,47.552 5.448,48 6,48L216,48C228.15,48 238,38.15 238,26C238,13.85 228.15,4 216,4Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#9d9bff" android:pathData="M216,4C228.15,4 238,13.85 238,26C238,38.029 228.346,47.803 216.364,47.997L216,48L6,48C5.487,48 5.064,47.614 5.007,47.117L5,47L5,5C5,4.487 5.386,4.064 5.883,4.007L6,4L216,4ZM216,4.4L6,4.4C5.702,4.4 5.454,4.618 5.408,4.903L5.4,5L5.4,47C5.4,47.298 5.618,47.546 5.903,47.592L6,47.6L216,47.6C227.929,47.6 237.6,37.929 237.6,26C237.6,14.19 228.122,4.594 216.357,4.403L216,4.4Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ns_12_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/profile_item_locked_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ns_64_dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/ns_28_dp" android:layout_height="wrap_content">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/white_FFFFFFFF" android:layout_gravity="center_horizontal" android:id="@id/tv_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_3_dp" app:defaultFontTypeface="true" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_4p8_dp" android:textColor="@color/white_80FFFFFF" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_f4_dp" android:text="@string/redmagic_skin_mora_story_data_hint" app:defaultFontTypeface="true" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_9_dp" android:src="@drawable/svg_ic_lock" />
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/profile_item_locked_sub_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_10_dp" android:layout_marginBottom="@dimen/ns_10_dp" android:layout_marginStart="@dimen/ns_44_dp">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_30_dp" android:textColor="@color/black_FF000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_3_dp" android:text="LOCKED" android:alpha="0.1" android:layout_marginEnd="@dimen/ns_8_dp" android:layout_alignParentEnd="true" app:defaultFontTypeface="true" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/grey_FF707070" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_3_dp" app:defaultFontTypeface="true" />
+            <TextView android:textSize="@dimen/ns_12_dp" android:textColor="@color/grey_FF707070" android:id="@id/tv_describe" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_2_dp" android:layout_marginBottom="@dimen/ns_4_dp" android:layout_below="@id/tv_title" android:lineSpacingExtra="@dimen/ns_f2_dp" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

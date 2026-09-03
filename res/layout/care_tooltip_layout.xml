@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:id="@id/tooltip_text" android:visibility="visible" android:layout_width="@dimen/ns_228_dp" android:layout_height="wrap_content" android:text="@string/email_tips_login" app:defaultFontTypeface="true" style="@style/Gamespace_Toast" />
+</LinearLayout>

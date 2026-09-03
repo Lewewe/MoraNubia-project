@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/ns_24_dp" android:width="@dimen/ns_24_dp" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$svg_checkbox_off__0" android:pathData="M12.667,1.385L20.86,6.115C21.272,6.353 21.526,6.793 21.526,7.27L21.526,16.73C21.526,17.207 21.272,17.647 20.86,17.885L12.667,22.615C12.254,22.853 11.746,22.853 11.333,22.615L3.14,17.885C2.728,17.647 2.474,17.207 2.474,16.73L2.474,7.27C2.474,6.793 2.728,6.353 3.14,6.115L11.333,1.385C11.746,1.147 12.254,1.147 12.667,1.385Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#4e3da5" android:pathData="M12.667,1.385L20.86,6.115C21.272,6.353 21.526,6.793 21.526,7.27L21.526,16.73C21.526,17.207 21.272,17.647 20.86,17.885L12.667,22.615C12.254,22.853 11.746,22.853 11.333,22.615L3.14,17.885C2.728,17.647 2.474,17.207 2.474,16.73L2.474,7.27C2.474,6.793 2.728,6.353 3.14,6.115L11.333,1.385C11.746,1.147 12.254,1.147 12.667,1.385ZM12,2.559L3.823,7.279L3.823,16.72L12,21.44L20.176,16.72L20.176,7.279L12,2.559Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="0.6" android:fillType="nonZero" />
+</vector>

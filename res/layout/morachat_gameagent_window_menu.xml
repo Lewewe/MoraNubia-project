@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_placehold" android:layout_width="1.0px" android:layout_height="1.0px" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/layout_menu_ai_functions" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_58_dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/layout_menu_output_buttons" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_58_dp" />
+    <include android:id="@id/layout_menu_output_list" android:layout_width="@dimen/morachat_gameagent_window_menu_list_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_52_dp" android:layout_marginTop="@dimen/ns_58_dp" layout="@layout/morachat_gameagent_window_menu_list" />
+    <include android:id="@id/layout_menu_output_textarea" android:layout_width="@dimen/morachat_gameagent_window_menu_list_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_52_dp" android:layout_marginTop="@dimen/ns_8_dp" layout="@layout/morachat_gameagent_window_menu_textarea" />
+</FrameLayout>

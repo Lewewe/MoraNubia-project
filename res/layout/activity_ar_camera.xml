@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_root" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/mainview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+            <cn.nubia.redmagickyi.unity.view.UnitySurfaceView android:orientation="vertical" android:id="@id/unityview" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+        <ImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout_big_image_fragment" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/layout_exit_port" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_32_dp">
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_btn_back" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="end|bottom" android:id="@id/layout_exit_port_180" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_32_dp">
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_btn_back_port_180" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="end" android:id="@id/layout_exit_land" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ns_16_dp">
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_btn_back_landscape" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/layout_exit_land_180" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ns_16_dp">
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_btn_back_landscape_180" />
+    </RelativeLayout>
+    <include android:layout_gravity="center" android:layout_width="@dimen/loading_bg_width" android:layout_height="wrap_content" layout="@layout/layout_loading" />
+</FrameLayout>

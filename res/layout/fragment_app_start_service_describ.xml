@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_vertical" android:id="@id/service_title_layout" android:background="@mipmap/pic_guide_title_bg" android:layout_width="match_parent" android:layout_height="@dimen/ns_40_dp" android:layout_marginTop="@dimen/ns_60_dp">
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_24_dp" android:textStyle="bold" android:textColor="@color/app_start_guide_seivece_title" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/guide_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_54_dp" android:layout_marginRight="@dimen/ns_34_dp" android:text="@string/user_agreement_title_new" />
+    </FrameLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="@dimen/ns_282_dp" android:layout_marginTop="@dimen/ns_16_dp" android:layout_below="@id/service_title_layout" android:layout_marginStart="@dimen/ns_42_dp" android:layout_marginEnd="@dimen/ns_42_dp">
+        <TextView android:textSize="@dimen/ns_13_dp" android:textColor="@color/app_start_guide_seivece_agreement" android:id="@id/agreement" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:id="@id/commit" android:layout_marginRight="@dimen/ns_50_dp" android:layout_marginBottom="@dimen/ns_90_dp" android:text="@string/app_start_commit_accept" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/redmagic_button_commit" />
+    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:layout_gravity="right" android:id="@id/cancel" android:layout_marginRight="@dimen/ns_50_dp" android:layout_marginBottom="@dimen/ns_43_dp" android:text="@string/app_start_commit_cancel" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/redmagic_button_cancel" />
+</RelativeLayout>

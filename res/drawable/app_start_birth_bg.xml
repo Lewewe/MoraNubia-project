@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/app_start_guide_seivece_cancel" />
+            <stroke android:width="@dimen/ns_1_dp" android:color="@color/app_start_guide_seivece_cancel" />
+            <corners android:radius="@dimen/ns_4_dp" />
+        </shape>> </item>
+    <item android:top="@dimen/ns_1p3_dp" android:bottom="@dimen/ns_1p3_dp" android:start="@dimen/ns_1p3_dp" android:end="@dimen/ns_1p3_dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/app_start_guide_birth_bg" />
+            <stroke android:width="@dimen/ns_1_dp" android:color="@color/white_FFFFFFFF" />
+            <corners android:radius="@dimen/ns_4_dp" />
+        </shape>
+    </item>
+</layer-list>

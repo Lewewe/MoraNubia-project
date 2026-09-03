@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/head_layout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_btn_back" android:layout_centerVertical="true" />
+    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_24_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center_vertical" android:id="@id/model_name" android:layout_width="wrap_content" android:layout_height="@dimen/ns_30_dp" android:text="@string/redmagic_playmate" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_18_dp" android:layout_marginEnd="@dimen/ns_18_dp" android:layout_toEndOf="@id/back" />
+</RelativeLayout>

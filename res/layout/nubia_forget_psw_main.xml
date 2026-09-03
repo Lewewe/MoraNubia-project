@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nubia_user_layout_toolbar" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ns_30_dp" android:layout_marginStart="@dimen/ns_16_dp" android:layout_marginEnd="@dimen/ns_16_dp">
+        <EditText android:textSize="@dimen/ns_14_sp" android:textColor="@color/care_black_100" android:textColorHint="#d2d2d2" android:id="@id/phone_email2" android:background="@mipmap/ns_button_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/plz_input_phone" android:singleLine="true" android:maxLength="18" android:drawableStart="@mipmap/ns_account_icon" />
+        <Button android:textSize="@dimen/ns_16_sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/send_code_btn" android:background="@drawable/ns_button_red_selector" android:layout_width="match_parent" android:layout_height="@dimen/ns_36_dp" android:layout_marginTop="@dimen/ns_12_dp" android:text="@string/next" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_80_dp">
+            <TextView android:textSize="@dimen/ns_14_dp" android:textColor="@color/color_black_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_appeal_header" />
+            <TextView android:textSize="@dimen/ns_14_dp" android:textColor="#2020fe" android:id="@id/appeal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_appeal" />
+            <TextView android:textSize="@dimen/ns_14_dp" android:textColor="@color/color_black_100" android:id="@id/apoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_day_concat" />
+            <TextView android:textSize="@dimen/ns_14_dp" android:textColor="#2020fe" android:id="@id/cancellation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_cancellation" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

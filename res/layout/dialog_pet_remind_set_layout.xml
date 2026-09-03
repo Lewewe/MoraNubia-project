@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout android:orientation="vertical" android:background="@mipmap/default_dialog_bg" android:paddingTop="@dimen/ns_12_dp" android:paddingBottom="@dimen/ns_32_dp" android:layout_width="@dimen/ns_332_dp" android:layout_height="wrap_content" android:minHeight="@dimen/ns_200_dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_20_dp" android:textColor="@color/white_FFFFFFFF" android:gravity="start" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_8_dp" android:text="@string/pet_title" android:singleLine="true" android:layout_marginStart="@dimen/ns_38_dp" android:layout_marginEnd="@dimen/ns_81_dp" app:defaultFontTypeface="true" />
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="end" android:id="@id/img_close_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_ic_close" android:layout_marginEnd="@dimen/ns_38_dp" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/ns_0_dp" android:layout_marginTop="@dimen/ns_28_dp" android:layout_weight="1.0" android:layout_marginStart="@dimen/ns_42_dp" android:layout_marginEnd="@dimen/ns_42_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_14_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pet_remind_content" />
+            <CheckBox android:textSize="@dimen/ns_14_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center_vertical" android:id="@id/cb_remind" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_16_dp" android:button="@null" android:text="@string/pet_remind_no_more" android:drawablePadding="@dimen/ns_8_dp" android:drawableStart="@drawable/checkbox_selector" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_16_dp" android:layout_marginStart="@dimen/ns_37_dp" android:layout_marginEnd="@dimen/ns_37_dp">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeButton android:id="@id/btn_cancel" android:layout_width="@dimen/ns_0_dp" android:text="@string/request_bglocation_dialog_btn_cancel" android:layout_weight="1.0" android:layout_marginEnd="@dimen/ns_2_dp" style="@style/redmagic_button_cancel" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeButton android:id="@id/btn_update" android:layout_width="@dimen/ns_0_dp" android:text="@string/shortcut_add_redmagickyi_launcher_commit" android:layout_weight="1.0" style="@style/redmagic_button_commit" />
+        </LinearLayout>
+    </cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout>
+</LinearLayout>

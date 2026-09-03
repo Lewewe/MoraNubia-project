@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_gamespace" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="end|top" android:id="@id/layout_panel_right" android:tag="always_visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="end" android:id="@id/iv_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_27_dp" android:src="@drawable/svg_ic_settings" android:layout_marginEnd="@dimen/ns_16_dp" />
+        <ImageView android:layout_gravity="end" android:id="@id/iv_volume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_59_dp" android:src="@drawable/svg_ic_volume_on" android:layout_marginEnd="@dimen/ns_16_dp" />
+        <LinearLayout android:gravity="end" android:layout_gravity="end" android:orientation="vertical" android:id="@id/layout_addon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_92_dp">
+            <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/layout_banner_update" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <cn.nubia.redmagickyi.view.BannerLayout android:id="@id/layout_banner" android:visibility="gone" android:layout_width="@dimen/ns_140_dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ns_12_dp" android:layout_marginEnd="@dimen/ns_8_dp" />
+                <View android:id="@id/banner_divider" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/ns_5_dp" />
+                <FrameLayout android:id="@id/layout_resource_update" android:background="@mipmap/gamespace_update_bg" android:paddingTop="@dimen/ns_3_dp" android:paddingBottom="@dimen/ns_3_dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_5_dp" android:paddingStart="@dimen/ns_3_dp" android:paddingEnd="@dimen/ns_4_dp" android:layout_marginStart="@dimen/ns_12_dp" android:layout_marginEnd="6.0dp">
+                    <cn.nubia.redmagickyi.view.UpdateProgressBar android:id="@id/pb_update" android:layout_width="@dimen/ns_135_dp" android:layout_height="@dimen/ns_40_dp" android:progressDrawable="@drawable/gamespace_update_progress" style="@android:style/Widget.ProgressBar.Horizontal" />
+                    <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="end|center" android:id="@id/iv_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_ic_download_update" android:layout_marginEnd="@dimen/ns_4_dp" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="end|bottom" android:orientation="vertical" android:id="@id/layout_mail_inspired" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ns_12_dp">
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="end" android:orientation="vertical" android:id="@id/mail" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_6_dp" android:src="@drawable/svg_ic_moramessage" />
+                        <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_10_dp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mail_title" app:defaultFontTypeface="true" app:shadowColor="@color/purple_D94E3DA5" />
+                    </LinearLayout>
+                    <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="end" android:id="@id/mail_unread_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_pop_new" android:layout_marginEnd="@dimen/ns_20_dp" />
+                    <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:id="@id/tips_mail" android:visibility="gone" android:layout_width="@dimen/ns_228_dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_14_dp" android:text="@string/email_tips_login" android:layout_marginEnd="@dimen/ns_26_dp" app:defaultFontTypeface="true" style="@style/Gamespace_Toast" />
+                </FrameLayout>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="end|bottom" android:orientation="vertical" android:id="@id/inspired" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_6_dp" android:layout_marginEnd="@dimen/ns_12_dp">
+                    <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_width="@dimen/ns_32_dp" android:layout_height="@dimen/ns_32_dp" android:src="@mipmap/gamespace_superwall_icon" />
+                    <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_10_dp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/redmagic_inspired_wallpaper" app:defaultFontTypeface="true" app:shadowColor="@color/purple_D94E3DA5" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="end|bottom" android:orientation="vertical" android:id="@id/morastore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_6_dp" android:layout_marginEnd="@dimen/ns_12_dp">
+                    <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_ic_morastore" />
+                    <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_10_dp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mora_store_title" app:defaultFontTypeface="true" app:shadowColor="@color/purple_D94E3DA5" />
+                </LinearLayout>
+                <FrameLayout android:layout_gravity="end|bottom" android:id="@id/livecalender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_6_dp" android:layout_marginEnd="@dimen/ns_12_dp">
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="end|bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_ic_livecalender" />
+                        <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_10_dp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_calender_title" app:defaultFontTypeface="true" app:shadowColor="@color/purple_D94E3DA5" />
+                    </LinearLayout>
+                    <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="end" android:id="@id/livecalender_unread_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_pop_new" android:layout_marginEnd="@dimen/ns_20_dp" />
+                </FrameLayout>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="end|bottom" android:orientation="vertical" android:id="@id/morachat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_6_dp" android:layout_marginEnd="@dimen/ns_12_dp">
+                    <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_ic_moraim" />
+                    <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_10_dp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morachat_fs_chat_title" app:defaultFontTypeface="true" app:shadowColor="@color/purple_D94E3DA5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <cn.nubia.redmagickyi.view.FriendValueStrokeTextView android:textSize="@dimen/ns_28_dp" android:id="@id/tv_friend_value_this" android:layout_width="wrap_content" android:layout_height="wrap_content" app:defaultFontTypeface="true" />
+    <include android:id="@id/tv_model_motion_subtitle" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/model_motion_subtitle_margin_top" android:layout_marginBottom="@dimen/model_motion_subtitle_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/model_motion_subtitle_margin_left" android:layout_marginEnd="@dimen/model_motion_subtitle_margin_right" layout="@layout/layout_toast" />
+    <RelativeLayout android:id="@id/layout_child_fragment" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="locale" />
+    <FrameLayout android:id="@id/layout_front" android:tag="always_visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="locale">
+        <include layout="@layout/gamespace_title" />
+    </FrameLayout>
+    <FrameLayout android:tag="always_visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/layout_gamespace_function_zones" layout="@layout/layout_gamespace_function_zones" />
+        <FrameLayout android:id="@id/layout_operator_zones" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_gravity="start|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout android:orientation="vertical" android:id="@id/layout_operator" android:background="@drawable/svg_bg_mainscreen_viewchangeicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_112_dp" android:layout_marginStart="@dimen/ns_20_dp">
+                    <FrameLayout android:id="@id/iv_changebg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <CheckBox android:layout_gravity="bottom" android:id="@id/cb_changebg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_2_dp" android:button="@null" android:layout_marginStart="@dimen/ns_2_dp" />
+                        <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_10_dp" android:layout_marginBottom="@dimen/ns_4_dp" android:src="@drawable/svg_ic_changebg" />
+                    </FrameLayout>
+                    <ImageView android:id="@id/iv_rotate" android:paddingTop="@dimen/ns_4_dp" android:paddingBottom="@dimen/ns_4_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/svg_ic_rotatescreen" />
+                    <ImageView android:id="@id/iv_changefocus" android:paddingTop="@dimen/ns_4_dp" android:paddingBottom="@dimen/ns_4_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/svg_ic_1xview" />
+                    <ImageView android:id="@id/iv_screenshot" android:paddingTop="@dimen/ns_4_dp" android:paddingBottom="@dimen/ns_10_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/svg_ic_screenshot" />
+                </cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout>
+                <FrameLayout android:layout_width="@dimen/ns_140_dp" android:layout_height="@dimen/ns_140_dp" android:layout_toEndOf="@id/layout_operator">
+                    <cn.nubia.redmagickyi.view.RecyclerViewEmptySupport android:id="@id/rv_changebg" android:background="@mipmap/gamespace_changebg" android:paddingLeft="@dimen/ns_7_dp" android:visibility="invisible" android:layout_width="@dimen/ns_140_dp" android:layout_height="@dimen/ns_140_dp" android:overScrollMode="never" android:layoutDirection="locale" />
+                </FrameLayout>
+                <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:gravity="start" android:id="@id/tips_screenshot" android:visibility="gone" android:layout_width="@dimen/ns_270_dp" android:layout_height="wrap_content" android:layout_alignBottom="@id/layout_operator" android:layout_marginStart="@dimen/ns_f12_dp" android:layout_toEndOf="@id/layout_operator" app:defaultFontTypeface="true" style="@style/Gamespace_Toast" />
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout_front_cover" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="right" android:id="@id/layout_front_fragment" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="locale" />
+    </FrameLayout>
+</FrameLayout>

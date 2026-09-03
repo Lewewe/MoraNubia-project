@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.nubia.redmagickyi.mainpage.wallpaperhub.statics.controller.MediaController android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/layout_cover" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <cn.nubia.redmagickyi.view.LoadingView android:layout_gravity="center" android:id="@id/layout_loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:text="@string/wallpaper_loading_text" />
+</cn.nubia.redmagickyi.mainpage.wallpaperhub.statics.controller.MediaController>

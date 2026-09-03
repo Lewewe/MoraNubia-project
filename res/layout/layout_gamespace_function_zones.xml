@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/morachat_entrance_layout_card" />
+    <LinearLayout android:gravity="end|bottom" android:layout_gravity="end|bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/layout_mainpage" android:layout_width="@dimen/ns_118p12_dp" android:layout_height="@dimen/ns_92_dp" android:layout_marginEnd="@dimen/ns_10_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="end" android:id="@id/redmagic_mainpage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gamespace_mainpage_icon" />
+            <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_20_dp" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_mainpage" android:layout_width="@dimen/ns_96_dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_20p76_dp" android:text="@string/redmagic_mainpage" android:rotation="-7.0" android:layout_marginStart="@dimen/ns_1_dp" android:breakStrategy="simple" app:defaultFontTypeface="true" app:shadowColor="@color/purple_D94E3DA5" app:shadowX="@dimen/ns_2_dp" app:shadowY="@dimen/ns_2_dp" app:strokeColor="@color/purple_FF7976FC" />
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="center_vertical" android:id="@id/redmagic_mainpage_unread_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_2_dp" android:src="@drawable/svg_pop_new" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_changeskin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_100_dp" android:layout_marginEnd="@dimen/ns_10_dp">
+            <FrameLayout android:layout_gravity="end" android:layout_width="@dimen/ns_157p12_dp" android:layout_height="@dimen/ns_92_dp">
+                <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="end" android:id="@id/redmagic_changeskin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gamespace_changeskin_icon" />
+                <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_24_dp" android:gravity="start" android:layout_gravity="center" android:id="@id/tv_changeskin" android:paddingTop="@dimen/ns_10_dp" android:paddingBottom="@dimen/ns_10_dp" android:layout_width="@dimen/ns_60_dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_1p5_dp" android:text="@string/practice_room_sub_title_skin" android:lineSpacingExtra="@dimen/ns_f4_dp" android:rotation="-3.0" android:layout_marginStart="@dimen/ns_24_dp" android:breakStrategy="simple" app:defaultFontTypeface="true" app:shadowColor="@color/purple_FF4E3DA5" app:shadowX="@dimen/ns_2_dp" app:shadowY="@dimen/ns_2_dp" app:strokeColor="@color/purple_FF7976FC" />
+                <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="center_vertical" android:id="@id/redmagic_changeskin_unread_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_4_dp" android:src="@drawable/svg_pop_new" />
+            </FrameLayout>
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:id="@id/tips_changeskin" android:visibility="gone" android:layout_width="@dimen/ns_228_dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_46_dp" android:text="@string/changeskin_tips_login" android:layout_marginEnd="@dimen/ns_128_dp" app:defaultFontTypeface="true" style="@style/Gamespace_Toast" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/layout_techcenter_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.nubia.redmagickyi.view.RecyclerViewEmptySupport android:layout_gravity="end|bottom" android:id="@id/rv_techcenter" android:layout_width="match_parent" android:layout_height="@dimen/ns_244_dp" android:layout_marginBottom="@dimen/ns_108_dp" android:overScrollMode="never" />
+    </FrameLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/digitalhuman_entrance_layout_card" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/layout_bottom_panel" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/ns_12_dp" android:layout_marginEnd="@dimen/ns_12_dp">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/layout_digitalhuman" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="@dimen/ns_f8_dp" android:layout_marginStart="@dimen/ns_4_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorCheckBox android:id="@id/cb_digitalhuman_icon" android:background="@drawable/gamespace_digitalhuman_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:transformPivotX="@dimen/ns_32_dp" android:transformPivotY="@dimen/ns_54_dp" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <cn.nubia.redmagickyi.view.rtl.AutoMirrorCheckBox android:id="@id/cb_digitalhuman_text" android:background="@drawable/svg_bg_mainscreen_buttom_text" android:button="@null" style="@style/Gamespace_Function_TextView" />
+                <cn.nubia.redmagickyi.view.rtl.AutoMirrorCheckBox android:id="@id/cb_digitalhuman_text_selected" android:background="@drawable/svg_bg_buttom_text_selected" android:button="@null" android:alpha="0.0" style="@style/Gamespace_Function_TextView" />
+                <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:id="@id/tv_digitalhuman" android:background="@android:color/transparent" android:button="@null" android:text="@string/morachat_entrance_card_footer_title" app:defaultFontTypeface="true" style="@style/Gamespace_Function_TextView" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/redmagic_playmate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_f8_dp" android:layout_marginStart="@dimen/ns_4_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gamespace_playmate_icon" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:id="@id/tv_playmate" android:text="@string/redmagic_playmate" app:defaultFontTypeface="true" style="@style/Gamespace_Function_TextView" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/redmagic_care" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_f8_dp" android:layout_marginStart="@dimen/ns_4_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gamespace_care_icon" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:id="@id/tv_care" android:text="@string/redmagic_care" app:defaultFontTypeface="true" style="@style/Gamespace_Function_TextView" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/technology_center" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="@dimen/ns_f8_dp" android:layout_marginStart="@dimen/ns_4_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorCheckBox android:id="@id/cb_technology_center_icon" android:background="@drawable/gamespace_techcenter_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:transformPivotX="@dimen/ns_32_dp" android:transformPivotY="@dimen/ns_54_dp" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <cn.nubia.redmagickyi.view.rtl.AutoMirrorCheckBox android:id="@id/cb_technology_center_text" android:background="@drawable/svg_bg_mainscreen_buttom_text" android:button="@null" style="@style/Gamespace_Function_TextView" />
+                <cn.nubia.redmagickyi.view.rtl.AutoMirrorCheckBox android:id="@id/cb_technology_center_text_selected" android:background="@drawable/svg_bg_buttom_text_selected" android:button="@null" android:alpha="0.0" style="@style/Gamespace_Function_TextView" />
+                <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:id="@id/tv_technology_center" android:background="@android:color/transparent" android:button="@null" android:text="@string/tec_center" app:defaultFontTypeface="true" style="@style/Gamespace_Function_TextView" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/redmagic_live" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_f8_dp" android:layout_marginStart="@dimen/ns_4_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gamespace_live_icon" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:id="@id/tv_live" android:text="@string/redmagic_live_text" app:defaultFontTypeface="true" style="@style/Gamespace_Function_TextView" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/redmagic_arcamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_f8_dp" android:layout_marginStart="@dimen/ns_4_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gamespace_arcamera_icon" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:id="@id/tv_aracame" android:text="@string/redmagic_ar_camera" app:defaultFontTypeface="true" style="@style/Gamespace_Function_TextView" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

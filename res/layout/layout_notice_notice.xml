@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="@dimen/ns_332_dp" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:background="@mipmap/notice_dialog_bg" android:layout_width="match_parent" android:layout_height="@dimen/ns_260_dp" />
+            <ImageView android:id="@id/img_layout_notice_big_picture" android:layout_width="@dimen/ns_312_dp" android:layout_height="@dimen/ns_192_dp" android:layout_marginTop="@dimen/ns_34_dp" android:scaleType="centerCrop" android:layout_marginStart="@dimen/ns_24_dp" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_f16_dp" android:layout_marginStart="@dimen/ns_30_dp" android:layout_marginEnd="@dimen/ns_30_dp">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_18_dp" android:textColor="@color/white_FFFFFFFF" android:gravity="start|center" android:id="@id/tv_layout_notice_title" android:layout_width="@dimen/ns_0_dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_8_dp" app:defaultFontTypeface="true" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_11_dp" android:textColor="@color/white_FFFFFFFF" android:gravity="start|center" android:id="@id/tv_layout_notice_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <cn.nubia.redmagickyi.view.RedmagicKyiWebview android:id="@id/webView_layout_notice_content" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/ns_30_dp" android:layout_marginEnd="@dimen/ns_30_dp" />
+    </LinearLayout>
+</ScrollView>

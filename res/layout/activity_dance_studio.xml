@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.nubia.redmagickyi.view.pageslider.PageContainer android:id="@id/layout_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/layout_download_controller" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_dance_studio_download_controller" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error_panel" android:background="@mipmap/bg_otherpage" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pic_mojitongxun_nowifi" android:scaleType="center" />
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_20_dp" android:textColor="@color/purple_FF4E3DA5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_12_dp" android:text="@string/mail_no_network" app:defaultFontTypeface="true" />
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeButton android:layout_gravity="center" android:id="@id/btn_content_not_network" android:layout_marginTop="@dimen/ns_20_dp" android:text="@string/mail_no_network_btn" style="@style/redmagic_button_commit" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_32_dp">
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_btn_back" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/white_FFFFFFFF" />
+                    <stroke android:width="@dimen/ns_0p81_dp" android:color="@color/purple_FF867AF7" />
+                    <corners android:radius="@dimen/ns_6_dp" />
+                </shape>> </item>
+            <item android:top="@dimen/ns_2_dp" android:bottom="@dimen/ns_2_dp" android:start="@dimen/ns_2_dp" android:end="@dimen/ns_2_dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/progress_0_color" />
+                    <corners android:radius="@dimen/ns_6_dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <layer-list>
+                <item>
+                    <shape android:shape="rectangle">
+                        <solid android:color="@color/white_FFFFFFFF" />
+                        <stroke android:width="@dimen/ns_0p81_dp" android:color="@color/purple_FF867AF7" />
+                        <corners android:radius="@dimen/ns_6_dp" />
+                    </shape>
+                </item>
+                <item android:top="@dimen/ns_2_dp" android:bottom="@dimen/ns_2_dp" android:start="@dimen/ns_2_dp" android:end="@dimen/ns_2_dp">
+                    <shape android:shape="rectangle">
+                        <gradient android:startColor="@color/purple_FFC397FF" android:endColor="@color/purple_FF9896FF" android:angle="0.0" android:centerColor="@color/purple_FFC397FF" />
+                        <corners android:radius="@dimen/ns_6_dp" />
+                    </shape>
+                </item>
+            </layer-list>
+        </clip>
+    </item>
+</layer-list>

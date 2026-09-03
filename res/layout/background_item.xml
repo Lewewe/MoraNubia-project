@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/ns_57_dp" android:layout_height="@dimen/ns_120_dp" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.nubia.redmagickyi.guide.view.RoundImageView android:id="@id/thumbnail" android:layout_width="@dimen/ns_54_dp" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_marginStart="@dimen/ns_3_dp" app:boarderColor="@color/white_FFFFFFFF" app:radius="@dimen/ns_2_dp" />
+    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:layout_gravity="bottom" android:id="@id/text" android:visibility="gone" android:layout_marginStart="@dimen/ns_f3_dp" style="@style/redmagic_inuse" />
+</FrameLayout>

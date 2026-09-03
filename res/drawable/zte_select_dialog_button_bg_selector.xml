@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="@dimen/zte_dialog_button_bg_radius" />
+            <solid android:color="@color/zte_select_dialog_item_pressed_bg" />
+        </shape>
+    </item>
+    <item android:drawable="@android:color/transparent" />
+</selector>

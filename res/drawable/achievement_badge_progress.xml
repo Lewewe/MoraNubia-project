@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:height="@dimen/ns_24_dp">
+        <bitmap android:src="@mipmap/bg_yonghuchengjiu_achievedialog_progress" />
+    </item>
+    <item android:id="@android:id/progress" android:height="@dimen/ns_20_dp" android:top="@dimen/ns_2_dp" android:bottom="@dimen/ns_2_dp" android:start="@dimen/ns_3_dp" android:end="@dimen/ns_3_dp">
+        <bitmap android:src="@mipmap/loading_yonghuchengjiu_achievedialog" />
+    </item>
+</layer-list>

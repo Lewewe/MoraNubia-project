@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout android:orientation="vertical" android:background="@mipmap/default_dialog_bg" android:paddingTop="@dimen/ns_12_dp" android:paddingBottom="@dimen/ns_32_dp" android:layout_width="@dimen/ns_332_dp" android:layout_height="wrap_content" android:minHeight="@dimen/ns_200_dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_20_dp" android:textColor="@color/white_FFFFFFFF" android:gravity="start" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_8_dp" android:text="@string/settings_clean_cache" android:singleLine="true" android:layout_marginStart="@dimen/ns_38_dp" android:layout_marginEnd="@dimen/ns_81_dp" app:defaultFontTypeface="true" />
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="end" android:id="@id/img_close_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_ic_close" android:layout_marginEnd="@dimen/ns_38_dp" />
+        </FrameLayout>
+        <ScrollView android:layout_gravity="center_horizontal" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="@dimen/ns_0_dp" android:layout_marginTop="@dimen/ns_28_dp" android:layout_weight="1.0" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_video_size" android:layout_width="match_parent" android:layout_height="@dimen/ns_44_dp" android:layout_marginStart="@dimen/ns_22_dp" android:layout_marginEnd="@dimen/ns_22_dp">
+                    <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_18_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_clean_cache_dialog_item_video" android:layout_marginStart="@dimen/ns_20_dp" app:defaultFontTypeface="true" />
+                    <TextView android:textSize="@dimen/settings_clean_cache_dialog_item_text" android:textColor="@color/settings_clean_cache_dialog_item_text" android:gravity="end" android:id="@id/tv_video_size" android:layout_width="@dimen/ns_0_dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/cb_video_size" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_selector" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_5_dp" android:layout_marginEnd="@dimen/ns_20_dp" android:layout_alignParentEnd="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/settings_clean_cache_dialog_item_height">
+                    <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_18_dp" android:textColor="@color/settings_clean_cache_dialog_item_text" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_clean_cache_dialog_item_skin" android:layout_marginStart="@dimen/settings_clean_cache_dialog_item_margin_left" app:defaultFontTypeface="true" />
+                    <TextView android:textSize="@dimen/settings_clean_cache_dialog_item_text" android:textColor="@color/settings_clean_cache_dialog_item_text" android:gravity="end" android:id="@id/tv_skin_size" android:layout_width="@dimen/ns_0_dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <CheckBox android:gravity="center" android:id="@id/cb_skin_size" android:background="@drawable/ar_gravity_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_16_dp" android:layout_marginStart="@dimen/ns_37_dp" android:layout_marginEnd="@dimen/ns_37_dp">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeButton android:id="@id/btn_cancel" android:layout_width="@dimen/ns_0_dp" android:text="@string/request_bglocation_dialog_btn_cancel" android:layout_weight="1.0" android:layout_marginEnd="@dimen/ns_2_dp" style="@style/redmagic_button_cancel" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeButton android:id="@id/btn_clean" android:layout_width="@dimen/ns_0_dp" android:text="@string/settings_clean_cache_dialog_btn" android:layout_weight="1.0" style="@style/redmagic_button_commit" />
+        </LinearLayout>
+    </cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout>
+</LinearLayout>

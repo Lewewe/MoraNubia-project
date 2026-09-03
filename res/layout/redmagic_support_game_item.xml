@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/redmagic_broadcast_game_item_selector" android:layout_width="@dimen/ns_172_dp" android:layout_height="@dimen/ns_56_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_18_dp" android:textColor="@drawable/redmagic_broadcast_game_item_text_selector" android:gravity="center_vertical" android:id="@id/tv_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_66_dp" />
+    <cn.nubia.redmagickyi.view.RedmagicKyiCheckBox android:gravity="center_vertical" android:id="@id/cb_game" android:layout_width="@dimen/ns_36_dp" android:layout_height="@dimen/ns_36_dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_24_dp" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/item_layout" android:layout_width="match_parent" android:layout_height="@dimen/ns_252_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.nubia.redmagickyi.guide.view.RoundImageView android:id="@id/item_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_marginStart="@dimen/ns_4_dp" app:boarderColor="@color/purple_1F4E3DA5" app:boarderWidth="@dimen/ns_0p5_dp" app:radius="@dimen/ns_4_dp" />
+    <ImageView android:layout_gravity="end|top" android:id="@id/dynamic_image" android:background="@mipmap/wallpaperhub_item_dynamic_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_2_dp" android:layout_marginEnd="@dimen/ns_2p3_dp" />
+    <ImageView android:layout_gravity="start|top" android:id="@id/newadd_image" android:background="@mipmap/mainpage_newadd_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_8_dp" />
+    <ImageView android:layout_gravity="start|bottom" android:id="@id/voice_image" android:background="@mipmap/wallpaperhub_item_voice_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wallpaperhub_child_item_voice_checkbox_margin_bottom" android:layout_marginStart="@dimen/wallpaperhub_child_item_voice_checkbox_margin_left" />
+    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:layout_gravity="bottom" android:id="@id/using_image" android:visibility="gone" android:layout_marginBottom="@dimen/ns_8_dp" style="@style/redmagic_inuse" />
+</FrameLayout>

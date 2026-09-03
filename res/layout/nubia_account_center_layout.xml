@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white_100" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nubia_user_layout_toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@id/head_img_item" android:layout_width="match_parent" android:layout_height="@dimen/ns_62_dp">
+                <TextView android:textSize="@dimen/ns_14_dp" android:textStyle="bold" android:textColor="@color/color_black_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_head_img" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_16_dp" />
+                <ImageView android:id="@id/iv_head_img" android:background="@mipmap/account_backgroud" android:layout_width="@dimen/ns_30_dp" android:layout_height="@dimen/ns_30_dp" android:src="@mipmap/account_empty" android:layout_centerVertical="true" android:layout_toStartOf="@id/arrow_1" />
+                <ImageView android:id="@id/arrow_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ns_arrow_next" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_6_dp" android:layout_alignParentEnd="true" />
+                <View android:background="@color/ark_color_gray" android:layout_width="match_parent" android:layout_height="@dimen/ns_0p6_dp" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/nickname_item" android:layout_width="match_parent" android:layout_height="@dimen/ns_52_dp">
+                <TextView android:textSize="@dimen/ns_14_dp" android:textStyle="bold" android:textColor="@color/color_black_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_nickname" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_16_dp" />
+                <TextView android:textSize="@dimen/ns_14_dp" android:textColor="@color/color_black_100" android:id="@id/tv_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/arrow_2" />
+                <ImageView android:id="@id/arrow_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ns_arrow_next" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_6_dp" android:layout_alignParentEnd="true" />
+                <View android:background="@color/ark_color_gray" android:layout_width="match_parent" android:layout_height="@dimen/ns_1_px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/sex_item" android:layout_width="match_parent" android:layout_height="@dimen/ns_52_dp">
+                <TextView android:textSize="@dimen/ns_14_dp" android:textStyle="bold" android:textColor="@color/color_black_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_sex" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_16_dp" />
+                <TextView android:textSize="@dimen/ns_14_dp" android:textColor="@color/color_black_100" android:id="@id/tv_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/arrow_3" />
+                <ImageView android:id="@id/arrow_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ns_arrow_next" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_6_dp" android:layout_alignParentEnd="true" />
+                <View android:background="@color/ark_color_gray" android:layout_width="match_parent" android:layout_height="@dimen/ns_1_px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/user_birthday_item" android:layout_width="match_parent" android:layout_height="@dimen/ns_52_dp">
+                <TextView android:textSize="@dimen/ns_14_dp" android:textStyle="bold" android:textColor="@color/color_black_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_birthday" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_16_dp" />
+                <TextView android:textSize="@dimen/ns_14_dp" android:textColor="@color/color_black_100" android:id="@id/tv_user_birthday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/arrow_4" />
+                <ImageView android:id="@id/arrow_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ns_arrow_next" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_6_dp" android:layout_alignParentEnd="true" />
+                <View android:background="@color/ark_color_gray" android:layout_width="match_parent" android:layout_height="@dimen/ns_1_px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <View android:background="@color/ark_color_gray_hint" android:layout_width="match_parent" android:layout_height="@dimen/ns_12_dp" />
+            <RelativeLayout android:id="@id/change_password_item" android:layout_width="match_parent" android:layout_height="@dimen/ns_52_dp">
+                <TextView android:textSize="@dimen/ns_14_dp" android:textStyle="bold" android:textColor="@color/color_black_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_password" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_16_dp" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ns_arrow_next" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_6_dp" android:layout_alignParentEnd="true" />
+                <View android:background="@color/ark_color_gray" android:layout_width="match_parent" android:layout_height="@dimen/ns_1_px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/change_phone_item" android:layout_width="match_parent" android:layout_height="@dimen/ns_52_dp">
+                <TextView android:textSize="@dimen/ns_14_dp" android:textStyle="bold" android:textColor="@color/color_black_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chagne_uesr_phone" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_16_dp" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ns_arrow_next" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_6_dp" android:layout_alignParentEnd="true" />
+                <View android:background="@color/ark_color_gray" android:layout_width="match_parent" android:layout_height="@dimen/ns_1_px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <View android:background="@color/ark_color_gray_hint" android:layout_width="match_parent" android:layout_height="@dimen/ns_12_dp" />
+            <RelativeLayout android:id="@id/logout_item" android:layout_width="match_parent" android:layout_height="@dimen/ns_52_dp">
+                <TextView android:textSize="@dimen/ns_14_dp" android:textStyle="bold" android:textColor="@color/color_red_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logout" android:layout_centerInParent="true" android:layout_marginStart="@dimen/ns_16_dp" />
+                <View android:background="@color/ark_color_gray" android:layout_width="match_parent" android:layout_height="@dimen/ns_1_px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

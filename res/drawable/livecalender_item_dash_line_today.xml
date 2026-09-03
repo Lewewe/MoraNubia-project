@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="line"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/ns_1_dp" android:color="@color/livecalender_item_dash_today" android:dashWidth="@dimen/ns_1_dp" android:dashGap="@dimen/ns_1p3_dp" />
+</shape>

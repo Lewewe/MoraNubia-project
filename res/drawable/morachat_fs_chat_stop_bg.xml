@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/ns_20_dp" />
+    <gradient android:startColor="@color/morachat_fs_chat_stop_bg_start" android:endColor="@color/morachat_fs_chat_stop_bg_end" android:angle="-45.0" />
+</shape>

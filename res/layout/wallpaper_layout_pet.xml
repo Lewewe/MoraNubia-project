@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ll_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:id="@id/unityview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@id/wallpaper_foreground" android:background="@mipmap/wallpaper_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/layout_front" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/layout_exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_32_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_btn_back" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/layout_preview_style_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_75_dp">
+            <FrameLayout android:id="@id/layout_preview_style_one" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/img_preview_style_one_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/power_item_selected_touyin_style_one" android:scaleType="centerCrop" />
+                <ImageView android:id="@id/img_preview_style_one" android:layout_width="@dimen/ns_124_dp" android:layout_height="@dimen/ns_110_dp" android:layout_marginTop="@dimen/ns_9p8_dp" android:src="@mipmap/tech_center_item_preview_magic_desktop_pet_style_one" android:scaleType="centerCrop" android:layout_marginStart="@dimen/ns_9p8_dp" />
+                <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:layout_gravity="bottom" android:id="@id/tv_using_one" android:visibility="gone" android:layout_marginBottom="@dimen/ns_20_dp" android:layout_marginStart="@dimen/ns_4_dp" style="@style/redmagic_inuse" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/layout_preview_style_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ns_f4_dp">
+                <ImageView android:id="@id/img_preview_style_two_selected" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/power_item_selected_touyin_style_two" android:scaleType="centerCrop" />
+                <ImageView android:id="@id/img_preview_style_two" android:layout_width="@dimen/ns_124_dp" android:layout_height="@dimen/ns_110_dp" android:layout_marginTop="@dimen/ns_9p8_dp" android:src="@mipmap/tech_center_item_preview_magic_desktop_pet_style_two" android:scaleType="centerCrop" android:layout_marginStart="@dimen/ns_9p8_dp" />
+                <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:layout_gravity="bottom" android:id="@id/tv_using_two" android:visibility="gone" android:layout_marginBottom="@dimen/ns_20_dp" android:layout_marginStart="@dimen/ns_4_dp" style="@style/redmagic_inuse" />
+            </FrameLayout>
+        </LinearLayout>
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:layout_gravity="center|bottom" android:id="@id/tv_commit" android:layout_marginBottom="@dimen/ns_18_dp" android:text="@string/powercharge_setting" style="@style/redmagic_button_commit" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_gravity="center" android:layout_width="@dimen/loading_bg_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_30_dp" layout="@layout/layout_loading" />
+    </FrameLayout>
+</FrameLayout>

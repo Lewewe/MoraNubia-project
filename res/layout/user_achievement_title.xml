@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_user_achievement_title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="@dimen/ns_192_dp" android:layout_height="@dimen/ns_33_dp" android:layout_marginTop="@dimen/ns_16_dp" android:src="@mipmap/pic_yonghuchengjiu_wordingachieve" android:layout_marginStart="@dimen/ns_48_dp" />
+    <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_48_dp" android:id="@id/tv_achievement_panel_title" android:layout_width="@dimen/ns_96_dp" android:layout_height="wrap_content" android:text="@string/achievement_title" android:singleLine="true" app:defaultFontTypeface="true" app:shadowColor="@color/purple_FF4E3DA5" app:shadowX="@dimen/ns_2_dp" app:shadowY="@dimen/ns_2_dp" app:strokeColor="@color/purple_FF867AF7" />
+    <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_20_dp" android:id="@id/tv_achievement_badge_count" android:layout_width="@dimen/ns_153_dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_58_dp" android:text="@string/achievement_obtain_badge" android:singleLine="true" app:defaultFontTypeface="true" app:shadowColor="@color/purple_FF867AF7" app:shadowX="@dimen/ns_1_dp" app:shadowY="@dimen/ns_1_dp" app:strokeColor="@color/purple_FF867AF7" />
+</RelativeLayout>

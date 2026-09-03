@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@mipmap/bg_otherpage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/head_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_32_dp">
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:id="@id/back" android:layout_width="@dimen/ns_54_dp" android:layout_height="@dimen/ns_52_dp" android:src="@drawable/svg_btn_back" android:layout_centerVertical="true" />
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_24_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center_vertical" android:id="@id/model_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mora_store_title" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_18_dp" android:layout_marginEnd="@dimen/ns_18_dp" android:layout_toEndOf="@id/back" app:defaultFontTypeface="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <org.libpag.PAGView android:id="@id/view_pag" android:layout_width="@dimen/ns_260_dp" android:layout_height="@dimen/ns_160_dp" />
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_20_dp" android:textColor="@color/purple_D94E3DA5" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_12_dp" android:text="@string/mora_store_content" android:layout_marginStart="@dimen/ns_18_dp" android:layout_marginEnd="@dimen/ns_18_dp" app:defaultFontTypeface="true" />
+    </LinearLayout>
+</FrameLayout>

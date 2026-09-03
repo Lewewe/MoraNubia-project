@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:background="?android:dividerHorizontal" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <cn.nubia.redmagickyi.user.widget.DatePickerView android:layout_gravity="center_horizontal" android:id="@id/nubia_date_picker_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_0_dp" android:layout_marginBottom="@dimen/ns_0_dp" />
+        <View android:background="?android:dividerHorizontal" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/nubia_lunar_date_layout" android:background="?android:selectableItemBackground" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/nubia_list_preferred_item_height_small">
+            <TextView android:textSize="@dimen/nubia_text_size_medium" android:textColor="?android:textColorPrimary" android:gravity="center_vertical" android:id="@id/nubia_lunar_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="?android:listPreferredItemPaddingLeft" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

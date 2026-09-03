@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <bitmap android:src="@mipmap/gamespace_heart_level_bg" />
+    </item>
+    <item android:id="@android:id/progress">
+        <clip android:gravity="bottom" android:clipOrientation="vertical">
+            <bitmap android:src="@mipmap/gamespace_heart_level_fg" />
+        </clip>
+    </item>
+</layer-list>

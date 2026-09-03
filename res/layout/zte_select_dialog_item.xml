@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/dialog_message_lockscreen" android:layout_width="match_parent" android:layout_height="@dimen/zte_select_dialog_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/zte_select_dialog_item_margin_text" android:textColor="@color/zte_select_dialog_item_text" android:layout_gravity="center" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/zte_select_dialog_item_margin_left" android:layout_marginEnd="@dimen/zte_select_dialog_item_margin_right" />
+</LinearLayout>

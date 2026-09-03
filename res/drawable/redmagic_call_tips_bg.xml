@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/redmagic_call_tips_bg" />
+    <corners android:radius="@dimen/redmagic_call_tips_bg_radius" />
+</shape>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/ns_44_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_18_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center_vertical" android:id="@id/wifi_none" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/care_wifi_none" android:layout_weight="1.0" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_20_dp" android:layout_marginEnd="@dimen/ns_12_dp" />
+    <ImageView android:id="@id/none" android:background="@drawable/svg_checkbox_on" android:visibility="visible" android:layout_width="@dimen/ns_24_dp" android:layout_height="@dimen/ns_24_dp" android:button="@null" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_20_dp" android:layout_alignParentEnd="true" />
+</LinearLayout>

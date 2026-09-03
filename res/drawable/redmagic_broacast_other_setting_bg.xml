@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="@dimen/ns_f8_dp">
+        <shape>
+            <gradient android:startColor="@color/white_4DFFFFFF" android:endColor="@color/white_4DE8E8FF" android:angle="45.0" />
+            <stroke android:width="@dimen/ns_2_dp" android:color="@color/purple_FF867AF7" />
+            <corners android:topLeftRadius="@dimen/ns_8_dp" android:topRightRadius="@dimen/ns_8_dp" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/ns_f8_dp" android:end="@dimen/ns_2_dp">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/ns_1_dp" android:color="@color/purple_FF867AF7" />
+            <corners android:topLeftRadius="@dimen/ns_8_dp" android:topRightRadius="@dimen/ns_8_dp" />
+        </shape>
+    </item>
+    <item android:top="@dimen/ns_1p3_dp" android:bottom="@dimen/ns_f8_dp" android:start="@dimen/ns_1p3_dp" android:end="@dimen/ns_2p3_dp">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/ns_1_dp" android:color="@color/white_FFFFFFFF" />
+            <corners android:topLeftRadius="@dimen/ns_8_dp" android:topRightRadius="@dimen/ns_8_dp" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_root" android:layout_width="match_parent" android:layout_height="@dimen/dance_studio_list_item_height_portait"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:background="@drawable/dance_studio_media_controller_center_pause_icon_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="start|top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dance_studio_list_item_padding_top" android:layout_marginBottom="@dimen/dance_studio_list_item_padding_bottom" android:layout_marginStart="@dimen/dance_studio_list_item_padding_left" android:layout_marginEnd="@dimen/dance_studio_list_item_padding_right">
+        <TextView android:textSize="@dimen/dance_studio_media_controller_title_text" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/dance_studio_media_controller_desc_text" android:textColor="@android:color/white" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="start|bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dance_studio_list_item_padding_top" android:layout_marginBottom="@dimen/dance_studio_list_item_padding_bottom" android:layout_marginStart="@dimen/dance_studio_list_item_padding_left" android:layout_marginEnd="@dimen/dance_studio_list_item_padding_right">
+        <TextView android:textSize="@dimen/dance_studio_media_controller_author_text" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tv_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/dance_studio_media_controller_publishtime_text" android:textColor="@android:color/white" android:id="@id/tv_publishtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

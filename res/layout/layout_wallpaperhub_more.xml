@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mainpage_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/head_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_32_dp">
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:id="@id/back" android:layout_width="@dimen/ns_54_dp" android:layout_height="@dimen/ns_52_dp" android:src="@drawable/svg_btn_back" android:layout_centerVertical="true" />
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_24_dp" android:textColor="@color/mainpage_header_text" android:gravity="center_vertical" android:id="@id/model_name" android:layout_width="wrap_content" android:layout_height="@dimen/ns_30_dp" android:text="@string/settings_title" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_18_dp" android:layout_marginEnd="@dimen/ns_18_dp" android:layout_toEndOf="@id/back" app:defaultFontTypeface="true" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/layout_content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <cn.nubia.redmagickyi.mainpage.main.view.GradientTextView android:textSize="@dimen/ns_16_dp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_32_dp" android:layout_marginBottom="@dimen/ns_32_dp" android:text="@string/mainpage_content_no_more" app:defaultFontTypeface="true" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,26 @@
+[
+  {
+    "function_id": "key_function_ai_memory",
+    "package_name": ["com.zte.aimemory"]
+  },
+  {
+    "function_id": "key_function_anti_scam",
+    "package_name": ["com.android.server.telecom", "com.zte.aiantifraud"]
+  },
+  {
+    "function_id": "key_function_ai_wallpaper",
+    "package_name": ["com.zte.beautify"]
+  },
+  {
+    "function_id": "key_function_ai_input",
+    "package_name": ["cn.zte.aigcinput"]
+  },
+  {
+    "function_id": "key_function_ai_recorder",
+    "package_name": ["cn.zte.recorder"]
+  },
+  {
+    "function_id": "key_function_live_translator",
+    "package_name": ["com.zte.nebulatranslation"]
+  }
+]

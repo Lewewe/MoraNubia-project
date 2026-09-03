@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/inflatedStart" android:background="@color/redmagic_call_video_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.nubia.redmagickyi.util.VideoView android:layout_gravity="center" android:id="@id/videoview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/view_default_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+    <cn.nubia.redmagickyi.view.FloatSurfaceView android:id="@id/preview" android:layout_width="@dimen/redmagic_call_preview_width" android:layout_height="@dimen/redmagic_call_preview_height" android:layout_marginTop="@dimen/redmagic_call_preview_margin_top" />
+    <ImageView android:layout_gravity="end" android:id="@id/preview_mask" android:background="@color/redmagic_call_preview_bg" android:layout_width="@dimen/redmagic_call_preview_width" android:layout_height="@dimen/redmagic_call_preview_height" android:layout_marginTop="@dimen/redmagic_call_preview_margin_top" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/img_hang_up_phone" android:background="@mipmap/redmagic_call_hang_up_bg" android:layout_width="@dimen/redmagic_call_hang_up_phone_width" android:layout_height="@dimen/redmagic_call_hang_up_phone_height" android:layout_marginBottom="@dimen/redmagic_call_hang_up_phone_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/redmagic_call_tips_bg_text" android:textColor="@color/redmagic_call_tips_text" android:gravity="center" android:id="@id/tv_tips" android:background="@drawable/redmagic_call_tips_bg" android:padding="@dimen/redmagic_call_tips_bg_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/redmagic_call_tips_bg_margin_bottom" android:minWidth="@dimen/redmagic_call_tips_bg_min_width" android:layout_above="@id/img_hang_up_phone" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/redmagic_call_tips_bg_margin_left" android:layout_marginEnd="@dimen/redmagic_call_tips_bg_margin_right" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.nubia.redmagickyi.view.RecyclerViewEmptySupport android:scrollbarSize="@dimen/scrollbar_width" android:scrollbarThumbHorizontal="@drawable/scrollbar_thumb" android:scrollbarTrackHorizontal="@drawable/scrollbar_bg" android:scrollbarStyle="outsideOverlay" android:id="@id/recycle_view_game" android:paddingBottom="@dimen/scrollbar_padding" android:scrollbars="none" android:clipToPadding="false" android:layout_width="@dimen/ns_172_dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_14_dp" android:overScrollMode="never" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/redmagic_broacast_other_setting_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ns_6_dp" android:layout_marginEnd="@dimen/ns_8_dp">
+        <cn.nubia.redmagickyi.view.RecyclerViewEmptySupport android:scrollbarSize="@dimen/scrollbar_width" android:scrollbarThumbVertical="@drawable/scrollbar_thumb" android:scrollbarTrackVertical="@drawable/scrollbar_bg" android:scrollbarStyle="outsideOverlay" android:id="@id/recycle_view_scene" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_10_dp" android:overScrollMode="never" android:layout_marginStart="@dimen/ns_1p3_dp" android:layout_marginEnd="@dimen/ns_2p3_dp" />
+    </LinearLayout>
+</LinearLayout>

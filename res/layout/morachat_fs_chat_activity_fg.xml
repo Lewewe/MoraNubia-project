@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_bg" android:background="@mipmap/morachat_fs_chat_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/head_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_32_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:id="@id/back" android:layout_width="@dimen/ns_54_dp" android:layout_height="@dimen/ns_52_dp" android:src="@drawable/svg_btn_back" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_change_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_18_dp" android:layout_alignParentEnd="true">
+                <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/ns_20_dp" android:layout_height="@dimen/ns_20_dp" android:src="@drawable/svg_ic_morachat_changebg" />
+                <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_14_dp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morachat_fs_chat_settings_change_bg" app:defaultFontTypeface="true" app:shadowColor="@color/purple_FF867AF7" app:strokeColor="@color/purple_FF867AF7" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/aigc_root_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                <cn.nubia.redmagickyi.morachat.fullscreen.chat.view.refresh.NPRefreshContentLayout android:id="@id/aigc_dialog_swipeRefresh" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/aigc_synchronization_header_content_view" android:paddingTop="@dimen/ns_6_dp" android:paddingBottom="@dimen/ns_10_dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ns_40_dp" android:paddingEnd="@dimen/ns_16_dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                        <ImageView android:id="@id/loading_rotate" android:layout_width="@dimen/ns_18_dp" android:layout_height="@dimen/ns_18_dp" android:src="@mipmap/morachat_pic_morachat_loading_rotate" />
+                        <View android:id="@id/space" android:layout_width="@dimen/ns_4_dp" android:layout_height="match_parent" />
+                        <TextView android:textSize="@dimen/ns_11_dp" android:textColor="@color/morachat_fs_chat_loading_text" android:gravity="start" android:layout_gravity="center_vertical" android:id="@android:id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morachat_fs_chat_loading_loading" />
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/aigc_dialog_rv_content" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </cn.nubia.redmagickyi.morachat.fullscreen.chat.view.refresh.NPRefreshContentLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/aigc_ll_stop" android:background="@drawable/morachat_fs_chat_stop_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/ns_32_dp" android:layout_marginTop="@dimen/ns_8_dp" android:layout_marginBottom="@dimen/ns_8_dp" android:minWidth="@dimen/ns_70_dp" android:paddingStart="@dimen/ns_6_dp" android:paddingEnd="@dimen/ns_10_dp">
+                <ImageView android:id="@id/iv_stop" android:layout_width="@dimen/ns_24_dp" android:layout_height="@dimen/ns_24_dp" android:src="@drawable/svg_ic_morachat_stop" android:layout_marginEnd="@dimen/ns_2_dp" />
+                <TextView android:textSize="@dimen/ns_14_dp" android:textColor="@color/morachat_fs_chat_stop_text" android:layout_gravity="center" android:id="@id/tv_stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_1_dp" android:text="@string/morachat_fs_chat_stop" android:maxLines="1" />
+            </LinearLayout>
+            <cn.nubia.redmagickyi.morachat.fullscreen.chat.view.input.text.InputTextLayout android:id="@id/aigc_dialog_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/morachat_fs_chat_input_margin_bottom_mobile" android:layout_marginStart="@dimen/morachat_fs_chat_input_margin_horizontal_mobile" android:layout_marginEnd="@dimen/morachat_fs_chat_input_margin_horizontal_mobile">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/morachat_fs_chat_input_height" android:paddingStart="@dimen/ns_12_dp" android:paddingEnd="@dimen/ns_12_dp">
+                    <ImageView android:layout_gravity="bottom" android:id="@id/aigc_dialog_pic" android:layout_width="@dimen/ns_28_dp" android:layout_height="@dimen/ns_28_dp" android:src="@drawable/svg_ic_morachat_picinput" android:layout_marginEnd="@dimen/ns_8_dp" android:layout_marginVertical="@dimen/ns_13_dp" />
+                    <EditText android:textSize="@dimen/ns_16_dp" android:textColor="@color/morachat_fs_chat_input_text" android:textColorHint="@color/morachat_fs_chat_input_hint" android:id="@id/aigc_dialog_input" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="@string/morachat_fs_chat_input_hint" android:maxLines="5" android:layout_weight="1.0" android:textSelectHandle="@android:color/transparent" android:textCursorDrawable="@drawable/morachat_fs_chat_input_cursor" android:paddingVertical="@dimen/ns_15_dp" />
+                    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_22_dp" android:textColor="@color/morachat_fs_chat_input_text" android:gravity="center" android:id="@id/aigc_dialog_input_speech" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/morachat_fs_chat_input_voice" android:layout_weight="1.0" app:defaultFontTypeface="true" />
+                    <ImageView android:layout_gravity="bottom" android:id="@id/aigc_dialog_send" android:layout_width="@dimen/ns_28_dp" android:layout_height="@dimen/ns_28_dp" android:src="@drawable/svg_ic_morachat_voiceinput" android:layout_marginStart="@dimen/ns_8_dp" android:layout_marginVertical="@dimen/ns_13_dp" />
+                </LinearLayout>
+            </cn.nubia.redmagickyi.morachat.fullscreen.chat.view.input.text.InputTextLayout>
+            <Space android:layout_width="wrap_content" android:layout_height="@dimen/ns_8_dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/aigc_dialog_input_speech_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/morachat_fs_chat_layout_speech" />
+</FrameLayout>

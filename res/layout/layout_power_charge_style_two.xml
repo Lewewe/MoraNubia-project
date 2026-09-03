@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/layout_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/power_charge_two_margin_top" android:layout_marginBottom="@dimen/power_charge_two_margin_bottom">
+        <TextView android:textSize="@dimen/power_charge_two_time_text" android:textColor="@color/white_FFFFFFFF" android:layout_gravity="center_horizontal" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textSize="@dimen/power_charge_two_battery_capacity_text" android:textColor="@color/white_FFFFFFFF" android:layout_gravity="center_horizontal" android:id="@id/tv_battery_capacity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/power_charge_two_battery_capacity_margin_top" android:singleLine="true" android:includeFontPadding="false" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/layout_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/power_charge_two_tips_normal_margin_top">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_charge_tips_normal" android:layout_width="wrap_content" android:layout_height="@dimen/power_charge_two_tips_height" android:src="@mipmap/power_charge_normal_icon" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_charge_tips_neo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/power_charge_two_tips_height" android:src="@mipmap/power_charge_neo_icon" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_charge_tips_max" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/power_charge_two_tips_height" android:src="@mipmap/power_charge_max_icon" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

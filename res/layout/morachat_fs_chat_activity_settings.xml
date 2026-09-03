@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_bg" android:background="@mipmap/morachat_fs_chat_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/head_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_32_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:id="@id/back" android:layout_width="@dimen/ns_54_dp" android:layout_height="@dimen/ns_52_dp" android:src="@drawable/svg_btn_back" android:layout_centerVertical="true" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_24_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center_vertical" android:id="@id/model_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morachat_fs_chat_settings_change_bg" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_18_dp" android:layout_marginEnd="@dimen/ns_18_dp" android:layout_toEndOf="@id/back" app:defaultFontTypeface="true" />
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/setting_bg" android:paddingTop="@dimen/ns_2_dp" android:paddingBottom="@dimen/ns_11_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_18_dp" android:paddingStart="@dimen/ns_2_dp" android:paddingEnd="@dimen/ns_3_dp" android:layout_marginStart="@dimen/ns_10_dp" android:layout_marginEnd="@dimen/ns_9_dp">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/layout_show_model" android:layout_width="match_parent" android:layout_height="@dimen/ns_44_dp" android:layout_marginTop="@dimen/ns_24_dp">
+                            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_18_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center_vertical" android:id="@id/tv_show_model" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/morachat_fs_chat_settings_model_panel_model_show" android:layout_weight="1.0" android:layout_marginStart="@dimen/ns_20_dp" android:layout_marginEnd="@dimen/ns_18_dp" app:defaultFontTypeface="true" />
+                            <cn.nubia.redmagickyi.guide.view.GuideSwitch android:layout_gravity="center_vertical" android:id="@id/cb_show_model" android:layout_width="@dimen/ns_72_dp" android:layout_height="@dimen/ns_30_dp" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_20_dp" android:layout_alignParentEnd="true" />
+                        </LinearLayout>
+                        <FrameLayout android:gravity="center_vertical" android:id="@id/layout_models" android:layout_width="wrap_content" android:layout_height="@dimen/ns_97p13_dp">
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/quick_recycleview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <View android:id="@id/recyclerview_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout android:orientation="horizontal" android:background="@mipmap/pic_setting_title" android:layout_width="wrap_content" android:layout_height="@dimen/ns_36_dp" android:layout_marginTop="@dimen/ns_8_dp" android:minWidth="@dimen/ns_136_dp" android:layout_marginStart="@dimen/ns_8_dp" android:layout_marginEnd="@dimen/ns_8_dp">
+                        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/wthite_ff" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/ns_96_dp" android:text="@string/morachat_fs_chat_settings_model_panel_title" android:lineSpacingExtra="@dimen/ns_f1_dp" android:layout_marginStart="@dimen/ns_25_dp" android:layout_marginEnd="@dimen/ns_5_dp" app:defaultFontTypeface="true" />
+                    </cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:orientation="vertical" android:background="@drawable/setting_bg" android:paddingTop="@dimen/ns_2_dp" android:paddingBottom="@dimen/ns_11_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_23_dp" android:paddingStart="@dimen/ns_2_dp" android:paddingEnd="@dimen/ns_3_dp" android:layout_marginStart="@dimen/ns_10_dp" android:layout_marginEnd="@dimen/ns_9_dp">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/layout_select_album" android:layout_width="match_parent" android:layout_height="@dimen/ns_44_dp" android:layout_marginTop="@dimen/ns_24_dp">
+                            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_18_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center_vertical" android:id="@id/tv_select_album" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/morachat_fs_chat_settings_bg_panel_album" android:layout_weight="1.0" android:layout_marginStart="@dimen/ns_20_dp" android:layout_marginEnd="@dimen/ns_18_dp" app:defaultFontTypeface="true" />
+                            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/ns_18_dp" android:layout_height="@dimen/ns_18_dp" android:src="@drawable/svg_ic_viewmore" android:layout_marginStart="@dimen/ns_4_dp" android:layout_marginEnd="@dimen/ns_20_dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="@dimen/ns_136_dp" android:layout_weight="1.0">
+                            <cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout android:orientation="horizontal" android:background="@mipmap/pic_setting_title" android:layout_width="wrap_content" android:layout_height="@dimen/ns_36_dp" android:layout_marginTop="@dimen/ns_13_dp" android:minWidth="@dimen/ns_136_dp" android:layout_marginStart="@dimen/ns_8_dp">
+                                <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/wthite_ff" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/ns_96_dp" android:text="@string/morachat_fs_chat_settings_bg_panel_title" android:lineSpacingExtra="@dimen/ns_f1_dp" android:layout_marginStart="@dimen/ns_25_dp" android:layout_marginEnd="@dimen/ns_5_dp" app:defaultFontTypeface="true" />
+                            </cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout>
+                        </FrameLayout>
+                        <LinearLayout android:gravity="end" android:layout_gravity="end|top" android:orientation="horizontal" android:id="@id/layout_reset_album" android:layout_width="wrap_content" android:layout_height="@dimen/ns_24_dp" android:layout_marginTop="@dimen/ns_25_dp" android:paddingEnd="@dimen/ns_6_dp" android:layout_marginEnd="@dimen/ns_20_dp">
+                            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/ns_20_dp" android:layout_height="@dimen/ns_20_dp" android:src="@drawable/svg_ic_morachat_recoverbg" />
+                            <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_14_dp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/ns_136_dp" android:text="@string/morachat_fs_chat_settings_bg_panel_reset" app:defaultFontTypeface="true" app:shadowColor="@color/purple_FF867AF7" app:strokeColor="@color/purple_FF867AF7" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/ns_21_dp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</FrameLayout>

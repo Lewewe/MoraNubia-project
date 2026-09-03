@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar_view" layout="@layout/nubia_user_layout_toolbar" />
+    <RelativeLayout android:id="@id/rl_phone_number" android:layout_width="match_parent" android:layout_height="@dimen/ns_62_dp" android:layout_below="@id/toolbar_view">
+        <TextView android:textSize="@dimen/ns_16_dp" android:textStyle="bold" android:textColor="@color/color_black_100" android:id="@id/tv_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_16_dp" />
+        <EditText android:textSize="@dimen/ns_14_dp" android:textColor="@color/care_black_100" android:id="@id/input_phone_number" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/phone_number" android:maxLength="11" android:inputType="number" android:layout_marginStart="@dimen/ns_18_dp" android:layout_toEndOf="@id/tv_phone_number" />
+        <View android:background="@color/ark_color_gray" android:layout_width="match_parent" android:layout_height="@dimen/ns_1_px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/ns_62_dp" android:layout_below="@id/rl_phone_number">
+        <TextView android:textSize="@dimen/ns_16_dp" android:textStyle="bold" android:textColor="@color/color_black_100" android:id="@id/tv_identifying_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identifying_code" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_16_dp" />
+        <EditText android:textSize="@dimen/ns_14_dp" android:textColor="@color/care_black_100" android:id="@id/input_identifying_code" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/sms_identifying_code" android:inputType="number" android:layout_marginStart="@dimen/ns_18_dp" android:layout_toEndOf="@id/tv_identifying_code" />
+        <Button android:textSize="@dimen/ns_14_dp" android:textColor="@color/color_red_100" android:id="@id/get_identifying_code" android:background="@drawable/ns_button_bg1" android:layout_width="@dimen/ns_110_dp" android:layout_height="@dimen/ns_36_dp" android:text="@string/next" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_16_dp" android:layout_alignParentEnd="true" />
+        <View android:background="@color/ark_color_gray" android:layout_width="match_parent" android:layout_height="@dimen/ns_1_px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_40_dp" android:layout_above="@id/ll_bottom_btn" android:layout_centerHorizontal="true">
+        <CheckBox android:id="@id/authorize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" style="@style/BeanCheckBox" />
+        <TextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/color_black_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_authorize_agree_account" android:layout_marginStart="@dimen/ns_10_dp" />
+        <TextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/color_red_100" android:id="@id/user_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/agreement" />
+        <TextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/color_black_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/and" />
+        <TextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/color_red_100" android:id="@id/privacy_policy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_policy" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_10_dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="@dimen/ns_14_dp" android:textColor="@color/color_red_100" android:id="@id/btn_cancel" android:background="@drawable/ns_button_bg1" android:layout_width="@dimen/ns_130_dp" android:layout_height="@dimen/ns_36_dp" android:text="@string/cancel" />
+        <Button android:textSize="@dimen/ns_14_dp" android:textColor="@color/color_red_100" android:id="@id/btn_confirm" android:background="@drawable/ns_button_bg1" android:layout_width="@dimen/ns_130_dp" android:layout_height="@dimen/ns_36_dp" android:text="@string/confirm" android:layout_marginStart="@dimen/ns_18_dp" />
+    </LinearLayout>
+</RelativeLayout>

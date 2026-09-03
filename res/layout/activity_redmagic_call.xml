@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@mipmap/wallpaper_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_call_begin" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/img_unknow_call" android:background="@mipmap/redmagic_call_face" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/redmagic_call_unknown_call_face_margin_top" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/redmagic_call_unknown_call_text" android:textColor="@color/redmagic_call_unknown_call_text" android:id="@id/tv_unknow_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/redmagic_call_unknown_call_text_margin_top" android:text="@string/redmagic_call_unknown_call_text" android:layout_below="@id/img_unknow_call" android:layout_centerHorizontal="true" />
+        <cn.nubia.redmagickyi.view.keyguard.NBKeyguardIconsLayout android:id="@id/layout_keyguard" android:layout_width="@dimen/redmagic_call_button_keyguard_layout_width" android:layout_height="@dimen/redmagic_call_button_keyguard_layout_height" android:layout_marginBottom="@dimen/redmagic_call_button_keyguard_layout_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <View android:id="@id/view_target_point" android:layout_width="@dimen/ns_0_dp" android:layout_height="@dimen/ns_0_dp" android:layout_centerInParent="true" />
+            <View android:id="@id/view_answer_point" android:layout_width="@dimen/ns_0_dp" android:layout_height="@dimen/ns_0_dp" android:layout_marginTop="@dimen/redmagic_call_distance_between_answer_and_center" android:layout_below="@id/view_target_point" android:layout_centerHorizontal="true" />
+            <View android:id="@id/view_decline_point" android:layout_width="@dimen/ns_0_dp" android:layout_height="@dimen/ns_0_dp" android:layout_marginBottom="@dimen/redmagic_call_distance_between_decline_and_center" android:layout_above="@id/view_target_point" android:layout_centerHorizontal="true" />
+        </cn.nubia.redmagickyi.view.keyguard.NBKeyguardIconsLayout>
+    </RelativeLayout>
+    <ViewStub android:id="@id/vs" android:layout="@layout/activity_redmagic_call_viewstub" android:inflatedId="@id/inflatedStart" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

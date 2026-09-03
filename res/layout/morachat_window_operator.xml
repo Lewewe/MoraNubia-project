@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_placehold" android:layout_width="1.0px" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_menu" android:background="@mipmap/morachat_bg_floatingwindow_actioins" android:paddingLeft="@dimen/ns_40_dp" android:layout_width="@dimen/ns_174_dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_35_dp" android:layout_marginTop="@dimen/ns_13_dp">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="end" android:orientation="vertical" android:id="@id/layout_translate" android:layout_width="@dimen/ns_36_dp" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_6_dp" android:src="@drawable/morachat_window_menu_icon_translate_selector" />
+            <TextView android:textSize="@dimen/ns_10_dp" android:textColor="@drawable/morachat_window_menu_text_selector" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morachat_window_translate" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="end" android:orientation="vertical" android:id="@id/layout_chat" android:layout_width="@dimen/ns_36_dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_6_dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_6_dp" android:src="@drawable/morachat_window_menu_icon_chat_selector" />
+            <TextView android:textSize="@dimen/ns_10_dp" android:textColor="@drawable/morachat_window_menu_text_selector" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morachat_window_chat" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="end" android:orientation="vertical" android:id="@id/layout_accompany" android:layout_width="@dimen/ns_36_dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_6_dp">
+            <ImageView android:id="@id/iv_accompany" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_6_dp" android:src="@drawable/morachat_window_menu_icon_accompany_selector" />
+            <TextView android:textSize="@dimen/ns_10_dp" android:textColor="@drawable/morachat_window_menu_text_selector" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morachat_window_accompany" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/layout_caption" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_58_dp" android:layout_marginTop="@dimen/ns_15_dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_caption" android:background="@mipmap/morachat_bg_floatingwindow_talk" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_caption_talk" android:background="@drawable/svg_ic_floatingwindow_talk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_15_dp" />
+        <cn.nubia.redmagickyi.morachat.window.redmagickyi.view.MarqueeTextView android:layout_gravity="center_vertical" android:id="@id/tv_caption" android:layout_width="wrap_content" android:layout_height="@dimen/ns_24_dp" android:layout_marginLeft="@dimen/ns_24_dp" />
+    </FrameLayout>
+</FrameLayout>

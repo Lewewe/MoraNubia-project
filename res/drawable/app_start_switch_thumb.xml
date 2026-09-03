@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="@dimen/ns_30_dp" android:width="@dimen/ns_30_dp" android:drawable="@mipmap/switchbtn_slider" android:start="@dimen/ns_4_dp" />
+</layer-list>

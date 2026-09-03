@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start|bottom" android:orientation="horizontal" android:id="@id/live_pc_main_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="start|bottom" android:orientation="vertical" android:background="@mipmap/ar_live_pc_menu_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_20_dp" android:layout_marginStart="@dimen/ns_13_dp">
+            <ImageView android:id="@id/live_pc_close" android:background="@drawable/ar_live_pc_close_selector" android:layout_width="@dimen/live_mobile_guide_sub_img_width_hight" android:layout_height="@dimen/live_mobile_guide_sub_img_width_hight" />
+            <CheckBox android:id="@id/live_pc_open_face_reg" android:background="@drawable/ar_live_pc_face_reg_selector" android:layout_width="@dimen/live_mobile_guide_sub_img_width_hight" android:layout_height="@dimen/live_mobile_guide_sub_img_width_hight" android:button="@null" />
+            <CheckBox android:id="@id/live_pc_change_charactor" android:background="@drawable/ar_live_pc_charactor_selector" android:layout_width="@dimen/live_mobile_guide_sub_img_width_hight" android:layout_height="@dimen/live_mobile_guide_sub_img_width_hight" android:button="@null" />
+            <ImageView android:id="@id/live_pc_setting" android:background="@drawable/ar_live_pc_settings_selector" android:layout_width="@dimen/live_mobile_guide_sub_img_width_hight" android:layout_height="@dimen/live_mobile_guide_sub_img_width_hight" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/pc_live_charactor_recycleview" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/ns_160_dp" />
+    </LinearLayout>
+</RelativeLayout>

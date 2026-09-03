@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/ns_24_dp" android:paddingEnd="@dimen/ns_16_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@mipmap/morachat_pic_morachat_pulldownline" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" />
+    <LinearLayout android:paddingBottom="@dimen/ns_3_dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <Space android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.7" />
+        <cn.nubia.redmagickyi.morachat.fullscreen.chat.view.MarqueeTextView android:textSize="@dimen/ns_11_dp" android:textColor="@color/morachat_fs_chat_loading_text" android:gravity="center" android:id="@id/tv_system_msg" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/morachat_fs_chat_loading_has_data_tip" android:maxLines="1" android:layout_weight="4.0" />
+        <Space android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.7" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

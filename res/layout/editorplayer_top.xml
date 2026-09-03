@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/player_top" android:background="@color/movie_black" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.nubia.redmagickyi.crop.view.VideoEditorView android:layout_gravity="center" android:id="@id/video_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    <cn.nubia.redmagickyi.crop.view.DrawView android:layout_gravity="center_horizontal" android:id="@id/draw_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_48_dp" />
+    <cn.nubia.redmagickyi.crop.view.CropView android:layout_gravity="center_horizontal" android:id="@id/crop_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_48_dp" />
+</FrameLayout>

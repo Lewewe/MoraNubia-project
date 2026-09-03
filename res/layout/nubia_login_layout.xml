@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nubia_user_layout_toolbar" />
+    <ScrollView android:background="@color/ark_color_gray_hint" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/ns_16_dp" android:layout_marginEnd="@dimen/ns_16_dp">
+            <ImageView android:id="@id/head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_48_dp" android:src="@mipmap/logo" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_48_dp">
+                <TextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/color_red_100" android:id="@id/account_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_login_pwd" />
+                <View android:background="@color/ark_color_gray" android:layout_width="@dimen/ns_1_px" android:layout_height="@dimen/ns_10_sp" android:layout_marginStart="@dimen/ns_16_dp" android:layout_marginEnd="@dimen/ns_16_dp" />
+                <TextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/color_black_100" android:id="@id/sms_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_login_verify_code" />
+            </LinearLayout>
+            <EditText android:textSize="@dimen/ns_14_sp" android:textColor="@color/care_black_100" android:textColorHint="#d2d2d2" android:id="@id/user_name" android:background="@drawable/rectangle_white" android:layout_width="match_parent" android:layout_height="@dimen/ns_42_dp" android:layout_marginTop="@dimen/ns_27_dp" android:hint="@string/user_phonenum_or_email" android:singleLine="true" android:paddingStart="@dimen/ns_12_dp" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/password" android:background="@drawable/rectangle_white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/ns_42_dp" android:layout_marginTop="@dimen/ns_12_dp">
+                <EditText android:textSize="@dimen/ns_14_sp" android:textColor="@color/care_black_100" android:textColorHint="#d2d2d2" android:layout_gravity="center_vertical" android:id="@id/user_password" android:background="#00ffffff" android:layout_width="@dimen/ns_0_dp" android:layout_height="match_parent" android:hint="@string/password" android:password="true" android:singleLine="true" android:layout_weight="1.0" android:inputType="phone" android:paddingStart="@dimen/ns_12_dp" />
+                <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/show_psw" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ns_passwd_hide" android:paddingEnd="@dimen/ns_10_dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/sms" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ns_42_dp" android:layout_marginTop="@dimen/ns_12_dp">
+                <EditText android:textSize="@dimen/ns_14_sp" android:textColor="@color/care_black_100" android:textColorHint="#d2d2d2" android:layout_gravity="center_vertical" android:id="@id/sms_code" android:background="@drawable/rectangle_white" android:layout_width="@dimen/ns_0_dp" android:layout_height="match_parent" android:hint="@string/user_input_verify_code" android:singleLine="true" android:layout_weight="2.0" android:paddingStart="@dimen/ns_12_dp" />
+                <TextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/color_black_87" android:gravity="center" android:id="@id/send_sms_code" android:background="@drawable/rectangle_white" android:layout_width="@dimen/ns_0_dp" android:layout_height="match_parent" android:text="@string/get_verification_code" android:layout_weight="1.0" android:layout_marginStart="@dimen/ns_5_dp" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/ns_20_dp" android:textColor="@color/ark_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/login" android:background="@drawable/rectangle" android:layout_width="match_parent" android:layout_height="@dimen/ns_42_dp" android:layout_marginTop="@dimen/ns_45_dp" android:text="@string/user_login" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/ns_25_dp" android:layout_marginTop="@dimen/ns_12_dp">
+                <TextView android:textSize="@dimen/ns_14_sp" android:textColor="@color/third_login_color_gray" android:id="@id/register" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register" android:layout_alignParentStart="true" />
+                <TextView android:textSize="@dimen/ns_14_sp" android:textColor="@color/third_login_color_gray" android:id="@id/tx_forget_password" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forget_passwd" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_60_dp">
+                <View android:layout_gravity="center" android:background="@color/color_black_54" android:layout_width="@dimen/ns_0_dp" android:layout_height="@dimen/ns_1_px" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/ns_14_dp" android:textColor="@color/third_login_color_gray" android:gravity="center" android:layout_width="@dimen/ns_0_dp" android:layout_height="wrap_content" android:text="@string/third_login_tip" android:layout_weight="1.0" />
+                <View android:layout_gravity="center" android:background="@color/color_black_54" android:layout_width="@dimen/ns_0_dp" android:layout_height="@dimen/ns_1_px" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_20_dp">
+                <TextView android:textSize="@dimen/ns_14_dp" android:gravity="center" android:id="@id/weixinlogin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/ns_77_dp" android:drawableTop="@drawable/ns_share_weixin_bg" android:layout_marginEnd="@dimen/ns_30_dp" />
+                <TextView android:textSize="@dimen/ns_14_dp" android:gravity="center" android:id="@id/weibologin" android:layout_width="wrap_content" android:layout_height="@dimen/ns_77_dp" android:drawableTop="@drawable/ns_share_weibo_bg" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

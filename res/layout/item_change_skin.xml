@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="@dimen/ns_78_dp" android:layout_height="@dimen/ns_144_dp" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/layout_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="center" android:id="@id/item_img_bg" android:background="@mipmap/skin_item_normal" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <cn.nubia.redmagickyi.skin.view.MaskImage android:layout_gravity="center" android:id="@id/iv_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" app:mask="@mipmap/skin_item_mask" />
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="center" android:id="@id/item_img_lock" android:background="@mipmap/skin_item_locked" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:layout_gravity="bottom" android:id="@id/item_select_layout" android:layout_marginBottom="@dimen/ns_11_dp" android:text="@string/redmagic_skin_dress_used" android:layout_marginStart="@dimen/ns_f3_dp" style="@style/redmagic_inuse" />
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_10_dp" android:textColor="@color/purple_FF867AF7" android:gravity="center" android:layout_gravity="end|bottom" android:id="@id/item_2d" android:layout_width="@dimen/ns_16_dp" android:layout_height="@dimen/ns_13_dp" android:layout_marginBottom="@dimen/ns_8_dp" android:layout_marginEnd="@dimen/ns_7_dp" />
+    </FrameLayout>
+</RelativeLayout>

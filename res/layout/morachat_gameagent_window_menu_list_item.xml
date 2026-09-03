@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/morachat_gameagent_window_operator_menu_list_item_bg" android:layout_width="match_parent" android:layout_height="@dimen/ns_48_dp" android:paddingHorizontal="@dimen/ns_13_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ns_12_dp" android:textColor="@color/white_FFFFFFFF" android:gravity="center" android:id="@id/iv_index" android:background="@drawable/morachat_gameagent_window_operator_menu_list_item_icon" android:layout_width="wrap_content" android:layout_height="@dimen/ns_18_dp" android:layout_marginRight="@dimen/ns_13p8_dp" android:minWidth="@dimen/ns_18_dp" android:text="1" android:singleLine="true" android:paddingHorizontal="@dimen/ns_2_dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_13p34_dp" android:textColor="@color/white_E6FFFFFF" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题文字XXXXXXXXXXXXX" android:singleLine="true" />
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_10p4_dp" android:textColor="@color/white_89FFFFFF" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二级说明文字XXXXXXXXXXXX" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

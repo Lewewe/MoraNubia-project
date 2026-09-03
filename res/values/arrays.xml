@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alarm_days_of_week_fullname">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="alarm_month_array">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+    <string-array name="alarm_type">
+        <item>约会</item>
+        <item>起床</item>
+        <item>吃饭</item>
+        <item>午休</item>
+        <item>闹钟</item>
+        <item>睡觉</item>
+        <item>运动</item>
+        <item>学习</item>
+        <item>喝水</item>
+    </string-array>
+    <string-array name="alarm_weeks">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+    <string-array name="live_calender_days_of_week">
+        <item>SUN</item>
+        <item>MON</item>
+        <item>TUE</item>
+        <item>WED</item>
+        <item>THU</item>
+        <item>FRI</item>
+        <item>SAT</item>
+    </string-array>
+    <string-array name="model_info_key">
+        <item>生日</item>
+        <item>身高</item>
+        <item>体重</item>
+        <item>年龄</item>
+        <item>血型</item>
+    </string-array>
+    <string-array name="model_info_value">
+        <item>2120.7.28</item>
+        <item>163cm</item>
+        <item>45kg</item>
+        <item>16</item>
+        <item>Ω型</item>
+    </string-array>
+    <string-array name="model_story_describe">
+        <item>21世纪末，地球因人口爆炸，快速达到了150亿人口，这导致地球资源即将消耗殆尽，环境面临崩溃。为了生存下去，人们开始不断地寻找着可以生存的新星球，直到发现了“α-5#”星球。</item>
+        <item>“α-5#”星球蕴藏着一种红色的新型能源，人们将其命名为“卡玛能源(Karma)”。这个能源拥有着巨大的能量，于是人们开始了全民移民计划——尼瓦纳计划(Niravana Plan)，整个计划在22世纪初完成。</item>
+        <item>移民到“α-5#”星球后，人们以“新人类(Neo Human)”自居，在这个星球上组建了“新宇宙发展联盟”并建立了新的家园，同时也迅速开始新型能源的开发。但是新事物总是蕴含着未知的危险......</item>
+        <item>新型能源在开发初期并不顺利，经常发生大爆炸，导致很多人员的伤亡。其中有些人受到了能源辐射的影响，各方面身体机能增强数倍，而意识却受到了无法逆转的损伤，变得极度狂躁且难以控制。</item>
+        <item>这件事引起了反政府主义者的注意，他们开始对这些发狂的人员进行不法实验，意图使用“卡玛”的能量改变人体基因制作出一批狂战士推翻新宇宙发展联盟。</item>
+        <item>新宇宙发展联盟不久便注意到了这项研究，联盟迅速对进行人体实验的不法分子进行了讨伐，并在这项危险实验走向不可控的方向之前终止了这项实验。</item>
+        <item>人体实验事件过后，人们意识到了卡玛能源会给人体带来巨大的改变，于是新宇宙发展联盟成立了“迪特瑞恩研究所”专门针对卡玛能源进行研究，使人们可以安全地利用并真正释放能源能量。</item>
+    </string-array>
+    <string-array name="model_story_describe_temp">
+        <item>卡玛能源的基本形态犹如一团高度浓缩凝聚的烈焰，无法直接使用，需要辅以温控技术才能真正安全的释放能量,于是在迪特瑞恩的领导下新人类的降温科技应运而生。</item>
+        <item>新降温科技基于冰、风的制冷科技最为领先,相应的制冷材料也最为精密,这一套以制冷为基础的能量控制技术够被新地球人运用于各个领域,如电力供应、医疗、武器装备等等。</item>
+        <item>“α-5#”星球的能源开发引起了不明外星文明的注意。于是2130年开始,不明外星文明开始秘密接触“α-5#”星,并迅速探明了星球上的超级能源,于2132年发动了一系列的资源掠夺战争。</item>
+        <item>新宇宙发展联盟决定进行反击,任命奥瑞(Orion)为指挥官,组建和训练了一支红魔战队,其中“氘锋小队”最为顶尖,由奥瑞(Orion)直接指挥。</item>
+        <item>战争的爆发使得“α-5#”星球不再是一个安详之地，而且新人类对母星的思念随着时间的变化越来越深，于是新人类希望将卡玛引入到故土之中,让地球重新焕发生机。新宇宙发展联盟计划派遣一队战士前往地球实行“圣莎拉计划(Samsara Plan)”，Orion的女儿—Mora就在其中。</item>
+        <item>Mora是在战争白热化时被父亲使用刚刚研制成功的时间穿梭装置送回现代的地球，Orain希望Mola带着100年后的技术拯救现在的地球,不让地球陷入资源枯竭的未来。这样就不需要再去到α5#星生存,不会经历资源掠夺战争。</item>
+        <item>在时间穿越的过程中，由于遇到了时空扭曲，回到地球上后只剩下Mora一人，而Mora的记忆也因此受到了损伤，忘却了许多事情，包括各种设备的用法和她的父亲，但是她并没有忘记她“圣莎拉计划”的使命。</item>
+        <item>跟当代人类接触并说明来意后，Mora通过随身携带的装置，让人类的科技达到了空前的水平。虽然没有红魔能量，人类还是在Mora的帮助下，逐渐掌握了对能源使用的掌握，对现有能源的使用变得清洁，便宜。</item>
+        <item>于是有一些地球上垄断能源的邪恶势力开始蠢蠢欲动，开始散布Mora的谣言，由于mora有着远超人类的科技装置以及身体结构，并且仅能解释她的使命，对于来历跟成长自己也毫无头绪。这更加剧了部分人类群体对这位神秘的少女生事的猜疑，甚至有传闻他就是外星文明派回来提前毁灭人类文明的人形武器。</item>
+        <item>对于种种流言少女也是毫不动摇，她坚定的相信自己使命的正义，在支持者的帮组下，加入了红魔学院，成为了红魔学院的能源问题特别顾问，也成立了一个红魔能源特别行动小组“红魔工会”，Mora担任组长，各位组员被称作执行官，来帮助解决世界各地的能源问题。</item>
+        <item>Mora在红魔学院中度过了一段时间，她的出色表现和领导才能赢得了众多学员的尊敬和支持。红魔工会成为了一个高效而协调的团队，他们在世界各地解决能源问题，推动清洁能源的发展。</item>
+        <item>然而，随着红魔工会的崛起和影响力的扩大，邪恶势力的反抗也逐渐升级。那些曾经垄断能源的势力感到他们的统治地位受到了威胁，他们对Mora和红魔工会展开了恶意的攻击和阻挠。黑暗势力的幕后主使试图操纵公众舆论，抹黑红魔工会的形象，甚至企图暗杀Mora以终结她的使命。</item>
+        <item>然而，红魔工会的成员们并不畏惧挑战，他们用智慧和勇气抵抗黑暗势力的阴谋。Mora通过她的超越人类的科技和决心，一次又一次地战胜了困难。她不仅在能源技术上不断突破，还积极倡导公众意识的转变，让人们意识到清洁能源的重要性，并提倡可持续发展的理念。</item>
+        <item>随着时间的推移，红魔工会的声望日益提高，他们成为了全球范围内解决能源危机的重要力量。通过科技的进步和人类的努力，地球的能源供应逐渐多样化，人类开始迈向可持续的未来。</item>
+        <item>在与黑暗势力的长期斗争中，红魔工会逐渐揭开了邪恶势力的真正目的。原来，那些势力并不仅仅是追求利益和权力，他们背后还有一个更大的计划——他们试图通过操控卡玛能源，掌控整个星球的未来，并且将人类重新陷入资源枯竭和环境崩溃的境地。</item>
+    </string-array>
+    <string-array name="model_story_title">
+        <item>发现α-5#星球</item>
+        <item>开启新时代</item>
+        <item>新人类的诞生</item>
+        <item>新能源的代价</item>
+        <item>不法实验</item>
+        <item>讨伐不法分子</item>
+        <item>转危为安</item>
+        <item>降温科技</item>
+        <item>技术普及</item>
+        <item>外星战争</item>
+        <item>氘锋小队</item>
+        <item>圣莎拉计划</item>
+        <item>送回现代的地球</item>
+        <item>穿越的代价</item>
+        <item>帮助现代人类</item>
+        <item>神秘少女的身世</item>
+        <item>坚定的信念</item>
+        <item>红魔工会</item>
+        <item>暗杀</item>
+        <item>不畏挑战</item>
+        <item>新能源时代</item>
+        <item>邪恶的目的</item>
+    </string-array>
+    <string-array name="nubia_months_full">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="nubia_months_short">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="nubia_weeks_full">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="nubia_weeks_short">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="redmagic_broadcast_game_cf_scene">
+        <item>进入对战</item>
+        <item>敌方安放C4</item>
+        <item>我方安放C4</item>
+        <item>C4即将爆炸提醒</item>
+        <item>主力枪械剩余子弹少于5发</item>
+    </string-array>
+    <string-array name="redmagic_broadcast_game_codm_scene">
+        <item>进入对战</item>
+        <item>装弹提醒</item>
+        <item>敌方安放炸弹</item>
+        <item>我方安放炸弹</item>
+        <item>拆除炸弹成功</item>
+    </string-array>
+    <string-array name="redmagic_broadcast_game_genshin_scene">
+        <item>玩家进入游戏</item>
+        <item>过渡动画加载</item>
+        <item>有人申请进入世界</item>
+    </string-array>
+    <string-array name="redmagic_broadcast_game_king_scene">
+        <item>复活倒计时</item>
+        <item>红蓝buff刷新提示</item>
+        <item>龙王刷新提示</item>
+        <item>主宰暴君刷新提示</item>
+    </string-array>
+    <string-array name="redmagic_broadcast_game_lolm_scene">
+        <item>复活倒计时</item>
+        <item>插眼技能刷新提示</item>
+        <item>买装备提醒</item>
+    </string-array>
+    <string-array name="redmagic_broadcast_game_peace_scene">
+        <item>决赛圈开启提示</item>
+        <item>低血量提示</item>
+        <item>战场低于75人数提示</item>
+        <item>战场低于50人数提示</item>
+        <item>战场低于25人数提示</item>
+        <item>战场低于10人数提示</item>
+        <item>提醒进入安全区</item>
+    </string-array>
+    <string-array name="tec_center_footer">
+        <item>给你的设备充电时，同时让红魔姬进入能源补给舱进行补给，你也可以看到她在舱内的样子。</item>
+        <item>开启后，设置在早间4:00到10:00的闹钟，将会通过红魔姬来唤醒你哦。</item>
+        <item>你的设备电量低于一定数值时，红魔姬会立即提醒你，避免突然断电。</item>
+        <item>Mora会出现在桌面上，随时都可以更近距离的与她互动啦！(点击图片进入桌面设置)</item>
+        <item>@string/pet_descr</item>
+        <item>让Mora来提醒你的每一个重要时刻吧!</item>
+    </string-array>
+    <string-array name="tec_center_header">
+        <item>能源补给</item>
+        <item>魔姬唤醒</item>
+        <item>低电提醒</item>
+        <item>互动桌面</item>
+        <item>@string/pet_title</item>
+        <item>@string/alarm_redmagickyi</item>
+    </string-array>
+</resources>

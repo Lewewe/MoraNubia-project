@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nubia_user_layout_toolbar" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/ns_20_dp" android:layout_marginEnd="@dimen/ns_20_dp">
+        <EditText android:textSize="@dimen/ns_14_sp" android:textColor="@color/care_black_100" android:textColorHint="#d2d2d2" android:id="@id/phone_email" android:background="@mipmap/ns_button_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_30_dp" android:hint="@string/plz_input_phone" android:singleLine="true" android:maxLength="40" android:inputType="phone" android:drawableStart="@mipmap/ns_account_icon" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@mipmap/ns_button_normal" android:layout_width="match_parent" android:layout_height="@dimen/ns_36_dp" android:layout_marginTop="@dimen/ns_12_dp">
+            <EditText android:textSize="@dimen/ns_14_sp" android:textColor="@color/care_black_100" android:textColorHint="#d2d2d2" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/psw1" android:background="@null" android:layout_width="@dimen/ns_0_dp" android:layout_height="match_parent" android:hint="@string/intput_passwd" android:password="true" android:singleLine="true" android:maxLength="16" android:layout_weight="1.0" android:drawableStart="@mipmap/ns_password_icon" />
+            <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/show_psw" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ns_passwd_hide" android:paddingEnd="@dimen/ns_10_dp" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/ns_16_sp" android:textColor="#ffffff" android:id="@id/reg_btn" android:background="@drawable/ns_button_red_selector" android:layout_width="match_parent" android:layout_height="@dimen/ns_36_dp" android:layout_marginTop="@dimen/ns_21_dp" android:text="@string/register" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/linear_register_check_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_21_dp">
+            <CheckBox android:layout_gravity="center_vertical" android:id="@id/read_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/ns_checkbox_bg" />
+            <TextView android:textSize="@dimen/ns_12_dp" android:textColor="@android:color/darker_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/I_agree" android:layout_marginStart="@dimen/ns_10_dp" />
+            <TextView android:textSize="@dimen/ns_12_dp" android:textColor="#0072ff" android:layout_gravity="center_vertical" android:id="@id/server_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_item" />
+            <TextView android:textSize="@dimen/ns_12_dp" android:textColor="@android:color/darker_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/and" />
+            <TextView android:textSize="@dimen/ns_12_dp" android:textColor="#0072ff" android:layout_gravity="center_vertical" android:id="@id/private_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

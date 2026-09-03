@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/ns_40_dp" android:width="@dimen/ns_140_dp" android:viewportWidth="140.0" android:viewportHeight="40.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$svg_pic_mojihuanzhuang_profilolist_selected__0" android:pathData="M4,0L136,0A4,4 0,0 1,140 4L140,36A4,4 0,0 1,136 40L4,40A4,4 0,0 1,0 36L0,4A4,4 0,0 1,4 0z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <group>
+        <clip-path android:pathData="M4,0L136,0A4,4 0,0 1,140 4L140,36A4,4 0,0 1,136 40L4,40A4,4 0,0 1,0 36L0,4A4,4 0,0 1,4 0z" />
+        <path android:fillColor="#ffffff" android:pathData="M30,2L140,2L140,2L140,38L30,38C28.9,38 28,37.1 28,36L28,4C28,2.9 28.9,2 30,2Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="0.9" android:fillType="evenOdd" />
+    </group>
+</vector>

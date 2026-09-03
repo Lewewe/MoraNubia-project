@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/ns_332_dp" android:layout_height="@dimen/ns_326_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout android:orientation="vertical" android:background="@mipmap/default_dialog_bg" android:paddingTop="@dimen/ns_12_dp" android:paddingBottom="@dimen/ns_22_dp" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/ns_200_dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_20_dp" android:textColor="@color/white_FFFFFFFF" android:gravity="start" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_8_dp" android:text="@string/redmagic_care_select_real_wifi" android:singleLine="true" android:layout_marginStart="@dimen/ns_38_dp" android:layout_marginEnd="@dimen/ns_81_dp" app:defaultFontTypeface="true" />
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="end" android:id="@id/wifi_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_ic_close" android:layout_marginEnd="@dimen/ns_38_dp" />
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/wifi_rectcle_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ns_12_dp" android:layout_below="@id/title" android:layout_marginStart="@dimen/ns_26_dp" android:layout_marginEnd="@dimen/ns_20_dp" />
+    </cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@id/care_voice_unmute_animation" android:visible="true" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="400" android:drawable="@mipmap/care_voice_unmute_lv1" />
+    <item android:duration="400" android:drawable="@mipmap/care_voice_unmute_lv2" />
+    <item android:duration="400" android:drawable="@mipmap/care_voice_unmute_lv3" />
+</animation-list>

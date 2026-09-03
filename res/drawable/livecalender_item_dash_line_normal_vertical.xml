@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="-10000.0dp" android:right="-10000.0dp">
+        <rotate android:drawable="@drawable/livecalender_item_dash_line_normal" android:fromDegrees="90.0" android:toDegrees="90.0" />
+    </item>
+</layer-list>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_vertical" android:id="@id/reg_title_layout" android:background="@mipmap/pic_guide_title_bg" android:layout_width="match_parent" android:layout_height="@dimen/ns_40_dp" android:layout_marginTop="@dimen/ns_60_dp">
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_24_dp" android:textStyle="bold" android:textColor="@color/app_start_guide_seivece_title" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/reg_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_54_dp" android:layout_marginRight="@dimen/ns_34_dp" android:text="@string/app_start_identify_reg" />
+    </FrameLayout>
+    <cn.nubia.redmagickyi.view.rtl.AutoMirrorRelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_4_dp" android:layout_below="@id/reg_title_layout" android:layout_marginStart="@dimen/ns_34_dp" android:layout_marginEnd="@dimen/ns_34_dp">
+        <RadioGroup android:gravity="center" android:orientation="vertical" android:id="@id/user_type_radio_group" android:layout_width="match_parent" android:layout_height="@dimen/ns_132_dp">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeRadioButton android:id="@id/student" android:text="@string/care_user_type_student" style="@style/App_Start_RedMagickyi_RadioButton" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeRadioButton android:id="@id/starff" android:text="@string/care_user_type_starff" style="@style/App_Start_RedMagickyi_RadioButton" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeRadioButton android:id="@id/secret" android:text="@string/care_user_type_secret" style="@style/App_Start_RedMagickyi_RadioButton" />
+        </RadioGroup>
+        <LinearLayout android:orientation="vertical" android:id="@id/birth_layout" android:background="@drawable/app_start_birth_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_12_dp" android:layout_below="@id/user_type_radio_group" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/ns_20_dp" android:layout_marginEnd="@dimen/ns_20_dp">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_14_dp" android:textStyle="bold" android:textColor="@color/app_start_guide_seivece_agreement" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/birth_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_8_dp" android:layout_marginBottom="@dimen/ns_8_dp" android:text="@string/app_start_identify_birth" android:layout_marginStart="@dimen/ns_2_dp" android:layout_marginEnd="@dimen/ns_2_dp" />
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorFrameLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/ns_132_dp" android:layoutDirection="ltr" android:layout_marginStart="@dimen/ns_2_dp" android:layout_marginEnd="@dimen/ns_2_dp">
+                <cn.nubia.redmagickyi.guide.DatePickerView android:id="@id/datepicker" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/ns_1_dp" android:layout_marginStart="@dimen/ns_2p3_dp" android:layout_marginEnd="@dimen/ns_2p3_dp" />
+            </cn.nubia.redmagickyi.view.rtl.AutoMirrorFrameLayout>
+        </LinearLayout>
+    </cn.nubia.redmagickyi.view.rtl.AutoMirrorRelativeLayout>
+    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:id="@id/commit" android:layout_marginRight="@dimen/ns_42_dp" android:layout_marginBottom="@dimen/ns_55_dp" android:text="@string/app_start_identify_reg_btn" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/redmagic_button_commit" />
+</RelativeLayout>

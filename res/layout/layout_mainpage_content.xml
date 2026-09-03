@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@color/mainpage_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/layout_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_recyclerview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <cn.nubia.redmagickyi.mainpage.main.view.GradientTextView android:textSize="@dimen/ns_16_dp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_32_dp" android:layout_marginBottom="@dimen/ns_32_dp" android:text="@string/mainpage_content_no_more" app:defaultFontTypeface="true" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/layout_addon" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_loading" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ns_20_dp" android:layout_marginBottom="@dimen/ns_120_dp">
+                <cn.nubia.redmagickyi.view.LoadingView android:layout_width="wrap_content" android:layout_height="wrap_content" app:text="@string/wallpaper_hub_loading_content" />
+            </LinearLayout>
+            <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_mainpage_no_network" />
+        </FrameLayout>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

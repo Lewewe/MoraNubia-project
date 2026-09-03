@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@mipmap/bg_otherpage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_16_dp" layout="@layout/coustom_title_back_layout" />
+    <RelativeLayout android:id="@id/video_view_layout" android:background="@drawable/playmate_video_bg" android:layout_width="@dimen/ns_348_dp" android:layout_height="@dimen/ns_152_dp" android:layout_marginTop="@dimen/ns_34_dp" android:layout_below="@id/title_layout" android:layout_marginStart="@dimen/ns_16_dp" android:layout_marginEnd="@dimen/ns_6_dp">
+        <FrameLayout android:gravity="center_vertical" android:id="@id/videoview" android:background="@color/redmagic_support_video_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ns_2_dp" android:layout_marginBottom="@dimen/ns_3_dp" android:layout_marginStart="@dimen/ns_2_dp" android:layout_marginEnd="@dimen/ns_3_dp" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_videoview_mask" android:layout_width="match_parent" android:layout_height="match_parent">
+            <cn.nubia.redmagickyi.view.LoadingView android:layout_gravity="center" android:id="@id/layout_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:text="@string/mail_loading_content" />
+            <ImageView android:id="@id/iv_videoview_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/redmagic_broadcast_video_play_icon_selector" android:layout_centerInParent="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error_panel" android:background="@color/redmagic_support_video_bg" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/iv_not_network" android:background="@mipmap/pic_mojitongxun_nowifi" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ns_f8_dp" />
+                <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_15_dp" android:textColor="@color/purple_FF4E3DA5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mail_no_network" app:defaultFontTypeface="true" />
+                <cn.nubia.redmagickyi.view.MarqueeView.MarqueeButton android:layout_gravity="center" android:id="@id/btn_content_not_network" android:layout_marginTop="@dimen/ns_2_dp" android:text="@string/mail_no_network_btn" style="@style/redmagic_button_commit" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/separat" android:layout_width="@dimen/ns_f24_dp" android:layout_height="@dimen/ns_20_dp" android:layout_marginTop="@dimen/ns_48_dp" android:src="@mipmap/pic_separator_land" android:layout_toEndOf="@id/video_view_layout" />
+    <RelativeLayout android:id="@id/radio_btn_layout" android:layout_width="wrap_content" android:layout_height="@dimen/ns_32_dp" android:layout_marginTop="@dimen/ns_24_dp" android:layout_toEndOf="@id/video_view_layout">
+        <RadioGroup android:orientation="horizontal" android:id="@id/radio_group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_14_dp">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeRadioButton android:textSize="@dimen/ns_14_dp" android:textColor="@drawable/playmate_radio_text_selector" android:gravity="center" android:id="@id/radio_title_broadcast" android:background="@drawable/playmate_radio_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/redmagic_brocast" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeRadioButton android:textSize="@dimen/ns_14_dp" android:textColor="@drawable/playmate_radio_text_selector" android:gravity="center" android:id="@id/radio_title_support" android:background="@drawable/playmate_radio_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/redmagic_support" />
+        </RadioGroup>
+    </RelativeLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/layout_redmagic_playmate_fragment" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ns_6_dp" android:layout_below="@id/separat" android:layout_toEndOf="@id/video_view_layout" />
+</RelativeLayout>

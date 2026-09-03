@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/ns_36_dp" android:width="@dimen/ns_36_dp" android:viewportWidth="36.0" android:viewportHeight="36.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$svg_checkbox_big_off__0" android:pathData="M18,18m-17.325,0a17.325,17.325 0,1 1,34.65 0a17.325,17.325 0,1 1,-34.65 0" android:fillType="evenOdd" />
+    <path android:pathData="M18,18m-17.325,0a17.325,17.325 0,1 1,34.65 0a17.325,17.325 0,1 1,-34.65 0" android:strokeColor="#4e3da5" android:strokeWidth="1.35" android:strokeLineCap="square" android:strokeAlpha="0.6" android:fillType="evenOdd" />
+</vector>

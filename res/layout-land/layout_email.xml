@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@mipmap/bg_otherpage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorRelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/head_layout" android:layout_width="match_parent" android:layout_height="@dimen/ns_52_dp" android:layout_marginTop="@dimen/ns_16_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_btn_back" android:layout_centerVertical="true" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_24_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center_vertical" android:id="@id/model_name" android:layout_width="wrap_content" android:layout_height="@dimen/ns_32_dp" android:text="@string/mail_title" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_18_dp" android:layout_marginEnd="@dimen/ns_4_dp" android:layout_toEndOf="@id/back" app:defaultFontTypeface="true" />
+            <LinearLayout android:id="@id/btn_all_read_layout" android:background="@mipmap/pic_mojitongxun_weidutishi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/ns_24_dp" android:minWidth="@dimen/ns_54_dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_4_dp" android:layout_toEndOf="@id/model_name">
+                <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_12_dp" android:textColor="@color/wthite_ff" android:layout_gravity="center_vertical" android:id="@id/btn_all_read" android:layout_width="wrap_content" android:layout_height="wrap_content" app:defaultFontTypeface="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/btn_delete_read" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_60_dp" android:layout_alignParentEnd="true">
+                <ImageView android:layout_width="@dimen/ns_20_dp" android:layout_height="@dimen/ns_20_dp" android:src="@drawable/svg_ic_mojitongxun_delete" android:layout_centerVertical="true" />
+                <cn.nubia.redmagickyi.view.StrokeTextView android:textSize="@dimen/ns_14_dp" android:textColor="@color/wthite_ff" android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/ns_18_dp" android:minWidth="0.0dp" android:minHeight="0.0dp" android:text="@string/mail_delete_read" android:shadowRadius="1.0" app:defaultFontTypeface="true" app:shadowColor="@color/red_FFF76666" app:shadowX="@dimen/ns_1_dp" app:shadowY="@dimen/ns_1_dp" />
+            </LinearLayout>
+        </cn.nubia.redmagickyi.view.rtl.AutoMirrorRelativeLayout>
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/left_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ns_60_dp" android:paddingEnd="@dimen/ns_60_dp">
+            <cn.nubia.redmagickyi.view.RecyclerViewEmptySupport android:scrollbarStyle="outsideOverlay" android:id="@id/recycle_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" android:overScrollMode="never" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ns_25_dp">
+        <ImageView android:id="@id/img_not_mail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pic_mojitongxun_nowifi" android:scaleType="center" />
+        <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_20_dp" android:textColor="@color/purple_AD4E3DA5" android:id="@id/tv_content_not_network" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_12_dp" android:text="@string/mail_no_network" app:defaultFontTypeface="true" />
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeButton android:layout_gravity="center" android:id="@id/btn_content_not_network" android:layout_marginTop="@dimen/ns_20_dp" android:text="@string/mail_no_network_btn" style="@style/redmagic_button_commit" />
+    </LinearLayout>
+</FrameLayout>

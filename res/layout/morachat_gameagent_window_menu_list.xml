@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/morachat_gameagent_window_operator_menu_list_bg" android:layout_width="@dimen/morachat_gameagent_window_menu_list_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_title" android:layout_width="wrap_content" android:layout_height="@dimen/ns_45_dp" android:paddingHorizontal="@dimen/ns_13_dp">
+        <ImageView android:id="@id/iv_title" android:layout_width="@dimen/ns_19p2_dp" android:layout_height="@dimen/ns_19p2_dp" android:src="@drawable/svg_ic_floatingwindow_gamecenter" />
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_13p6_dp" android:textColor="@color/white_D9FFFFFF" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_13_dp" android:text="@string/morachat_gameagent_window_gamecenter" android:singleLine="true" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_12_dp" android:textColor="@color/purple_FF7976FC" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_canceled" android:layout_width="wrap_content" android:layout_height="@dimen/ns_35_dp" android:text="@string/morachat_gameagent_window_cancel" android:singleLine="true" android:paddingHorizontal="@dimen/ns_7_dp" />
+</LinearLayout>

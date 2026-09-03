@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/app_start_pop_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ns_40_dp" android:layout_marginBottom="@dimen/ns_200_dp" />
+    <ImageView android:id="@id/app_start_bottom_image_show" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/app_start_bottom_text_show" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_10_dp" android:scaleType="centerCrop" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:layout_width="@dimen/ns_360_dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/ns_40_dp" android:layout_marginBottom="@dimen/ns_200_dp" android:layout_centerHorizontal="true">
+        <FrameLayout android:orientation="vertical" android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View android:id="@id/mask" android:background="@color/black_FF000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

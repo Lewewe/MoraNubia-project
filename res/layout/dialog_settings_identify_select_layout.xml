@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout android:orientation="vertical" android:background="@mipmap/default_dialog_bg" android:paddingTop="@dimen/ns_12_dp" android:paddingBottom="@dimen/ns_32_dp" android:layout_width="@dimen/ns_332_dp" android:layout_height="wrap_content" android:minHeight="@dimen/ns_200_dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_20_dp" android:textColor="@color/white_FFFFFFFF" android:gravity="start" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_8_dp" android:text="@string/identify_select" android:singleLine="true" android:layout_marginStart="@dimen/ns_38_dp" android:layout_marginEnd="@dimen/ns_81_dp" app:defaultFontTypeface="true" />
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:layout_gravity="end" android:id="@id/img_close_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_ic_close" android:layout_marginEnd="@dimen/ns_38_dp" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="@dimen/ns_0_dp" android:layout_marginTop="@dimen/ns_28_dp" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/select_student" android:layout_width="match_parent" android:layout_height="@dimen/ns_44_dp" android:layout_marginStart="@dimen/ns_22_dp" android:layout_marginEnd="@dimen/ns_22_dp">
+                    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_18_dp" android:textColor="@color/purple_D94E3DA5" android:layout_width="@dimen/ns_0_dp" android:layout_height="wrap_content" android:text="@string/care_user_type_student" android:layout_weight="1.0" android:layout_marginStart="@dimen/ns_20_dp" android:layout_marginEnd="@dimen/ns_10_dp" app:defaultFontTypeface="true" />
+                    <CheckBox android:id="@id/cb_select_student" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_selector" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_20_dp" android:layout_alignParentEnd="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/select_staff" android:layout_width="match_parent" android:layout_height="@dimen/ns_44_dp" android:layout_marginStart="@dimen/ns_22_dp" android:layout_marginEnd="@dimen/ns_22_dp">
+                    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_18_dp" android:textColor="@color/purple_D94E3DA5" android:layout_width="@dimen/ns_0_dp" android:layout_height="wrap_content" android:text="@string/care_user_type_starff" android:layout_weight="1.0" android:layout_marginStart="@dimen/ns_20_dp" android:layout_marginEnd="@dimen/ns_10_dp" app:defaultFontTypeface="true" />
+                    <CheckBox android:id="@id/cb_select_staff" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_selector" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_20_dp" android:layout_alignParentEnd="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/select_secret" android:layout_width="match_parent" android:layout_height="@dimen/ns_44_dp" android:layout_marginStart="@dimen/ns_22_dp" android:layout_marginEnd="@dimen/ns_22_dp">
+                    <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_18_dp" android:textColor="@color/purple_D94E3DA5" android:layout_width="@dimen/ns_0_dp" android:layout_height="wrap_content" android:text="@string/care_user_type_secret" android:layout_weight="1.0" android:layout_marginStart="@dimen/ns_20_dp" android:layout_marginEnd="@dimen/ns_10_dp" app:defaultFontTypeface="true" />
+                    <CheckBox android:id="@id/cb_select_secret" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_selector" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ns_20_dp" android:layout_alignParentEnd="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_16_dp">
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeButton android:id="@id/btn_cancel" android:text="@string/request_bglocation_dialog_btn_cancel" android:layout_marginStart="@dimen/ns_110_dp" style="@style/redmagic_button_cancel" />
+        </LinearLayout>
+    </cn.nubia.redmagickyi.view.rtl.AutoMirrorLinearLayout>
+</LinearLayout>

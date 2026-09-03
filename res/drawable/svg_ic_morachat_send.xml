@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="28.0dp" android:width="28.0dp" android:viewportWidth="28.0" android:viewportHeight="28.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$svg_ic_morachat_send__0" android:pathData="M14,14m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffff" android:pathData="M21.0057,8.6129L14.9474,21.4867C14.7123,21.9864 14.1165,22.2009 13.6168,21.9657C13.3954,21.8615 13.2199,21.6797 13.1235,21.4548L11,16.5L11,16.5L15,12.5L10,15.5L6.1593,13.5797C5.6654,13.3327 5.4651,12.732 5.7121,12.238C5.8307,12.0008 6.0387,11.8204 6.2903,11.7366L19.7846,7.2385C20.3086,7.0638 20.8749,7.347 21.0495,7.8709C21.1308,8.1147 21.1151,8.3804 21.0057,8.6129Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

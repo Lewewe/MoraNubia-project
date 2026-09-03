@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_bg" android:background="@mipmap/bg_otherpage" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/head_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_32_dp">
+            <cn.nubia.redmagickyi.view.rtl.AutoMirrorImageView android:id="@id/back" android:layout_width="@dimen/ns_54_dp" android:layout_height="@dimen/ns_52_dp" android:src="@drawable/svg_btn_back" android:layout_centerVertical="true" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_24_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center_vertical" android:id="@id/model_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morachat_entrance_training_title" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_18_dp" android:layout_marginEnd="@dimen/ns_18_dp" android:layout_toEndOf="@id/back" app:defaultFontTypeface="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/ns_320_dp" android:layout_height="@dimen/ns_650_dp" android:layout_marginTop="@dimen/ns_8_dp">
+            <ImageView android:background="@mipmap/morachat_pic_voiceinput_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <cn.nubia.redmagickyi.morachat.entrance.view.SpeechBar android:id="@id/speech_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_261_dp" android:layout_marginStart="@dimen/ns_36_dp" />
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_18_dp" android:textColor="@color/purple_D94E3DA5" android:id="@id/tv_hint_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_23_dp" android:text="@string/morachat_entrance_training_before_title" android:layout_below="@id/speech_bar" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ns_36_dp" android:layout_marginEnd="@dimen/ns_36_dp" app:defaultFontTypeface="true" />
+            <FrameLayout android:layout_width="@dimen/ns_263_dp" android:layout_height="@dimen/ns_239_dp" android:layout_marginTop="@dimen/ns_78_dp" android:layout_below="@id/speech_bar" android:layout_centerHorizontal="true">
+                <FrameLayout android:id="@id/layout_train_before" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:background="@mipmap/morachat_pic_voiceinput_talkdistance" android:layout_width="match_parent" android:layout_height="match_parent" />
+                    <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_14_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center" android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ns_25_dp" android:text="@string/morachat_entrance_training_before_msg" android:layout_marginStart="@dimen/ns_6_dp" android:layout_marginEnd="@dimen/ns_6_dp" app:defaultFontTypeface="true" />
+                </FrameLayout>
+                <cn.nubia.redmagickyi.morachat.entrance.view.TrainingWordContainer android:id="@id/layout_training" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ns_30_dp" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_train_after" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ns_21_dp">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/svg_pic_voiceinput_complete" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <cn.nubia.redmagickyi.view.rtl.AutoMirrorTextView android:textSize="@dimen/ns_14_dp" android:textColor="@color/purple_D94E3DA5" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/layout_train_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_4_dp" android:text="@string/morachat_entrance_training_end_msg_end" android:layout_marginStart="@dimen/ns_6_dp" android:layout_marginEnd="@dimen/ns_6_dp" app:defaultFontTypeface="true" />
+                </LinearLayout>
+            </FrameLayout>
+            <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:enabled="false" android:id="@id/tv_commit" android:layout_marginBottom="@dimen/ns_14_dp" android:text="@string/morachat_entrance_training_before_btn" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/redmagic_button_commit" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

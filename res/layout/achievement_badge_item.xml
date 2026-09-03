@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/achievement_badge_item_layout" android:layout_width="match_parent" android:layout_height="@dimen/ns_168_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="@dimen/ns_150_dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/ns_6_dp" android:layout_marginEnd="@dimen/ns_6_dp">
+        <ImageView android:id="@id/iv_achievement_header" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+        <cn.nubia.redmagickyi.view.MarqueeView.MarqueeTextView android:textSize="@dimen/ns_16_dp" android:textColor="@color/white_FFFFFFFF" android:ellipsize="marquee" android:id="@id/tv_achivement_task_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ns_6_dp" android:singleLine="true" android:layout_centerHorizontal="true" app:defaultFontTypeface="true" />
+        <ImageView android:id="@id/iv_achievement_task_icon" android:paddingTop="@dimen/ns_f19p4_dp" android:paddingBottom="@dimen/ns_f19p4_dp" android:layout_width="@dimen/ns_116_dp" android:layout_height="@dimen/ns_97p36_dp" android:layout_marginTop="@dimen/ns_42_dp" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:paddingStart="@dimen/ns_f10_dp" android:paddingEnd="@dimen/ns_f10_dp" />
+        <ProgressBar android:id="@id/progress_achievement_task" android:layout_width="@dimen/ns_122_dp" android:layout_height="@dimen/ns_6_dp" android:layout_marginBottom="@dimen/ns_13_dp" android:progressDrawable="@drawable/achievement_progressbar_bg" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="?android:progressBarStyleHorizontal" />
+        <ImageView android:id="@id/iv_mask" android:background="@drawable/achievement_task_bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,83 @@
+.class Landroidx/camera/core/VideoCapture$2;
+.super Ljava/lang/Object;
+.source "VideoCapture.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/camera/core/VideoCapture;->startRecording(Landroidx/camera/core/VideoCapture$OutputFileOptions;Ljava/util/concurrent/Executor;Landroidx/camera/core/VideoCapture$OnVideoSavedCallback;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Landroidx/camera/core/VideoCapture;
+
+.field final synthetic val$cameraId:Ljava/lang/String;
+
+.field final synthetic val$postListener:Landroidx/camera/core/VideoCapture$OnVideoSavedCallback;
+
+.field final synthetic val$resolution:Landroid/util/Size;
+
+
+# direct methods
+.method constructor <init>(Landroidx/camera/core/VideoCapture;Landroidx/camera/core/VideoCapture$OnVideoSavedCallback;Ljava/lang/String;Landroid/util/Size;)V
+    .locals 0
+
+    .line 402
+    iput-object p1, p0, Landroidx/camera/core/VideoCapture$2;->this$0:Landroidx/camera/core/VideoCapture;
+
+    iput-object p2, p0, Landroidx/camera/core/VideoCapture$2;->val$postListener:Landroidx/camera/core/VideoCapture$OnVideoSavedCallback;
+
+    iput-object p3, p0, Landroidx/camera/core/VideoCapture$2;->val$cameraId:Ljava/lang/String;
+
+    iput-object p4, p0, Landroidx/camera/core/VideoCapture$2;->val$resolution:Landroid/util/Size;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 4
+
+    .line 405
+    iget-object v0, p0, Landroidx/camera/core/VideoCapture$2;->this$0:Landroidx/camera/core/VideoCapture;
+
+    iget-object v1, p0, Landroidx/camera/core/VideoCapture$2;->val$postListener:Landroidx/camera/core/VideoCapture$OnVideoSavedCallback;
+
+    iget-object v2, p0, Landroidx/camera/core/VideoCapture$2;->val$cameraId:Ljava/lang/String;
+
+    iget-object v3, p0, Landroidx/camera/core/VideoCapture$2;->val$resolution:Landroid/util/Size;
+
+    invoke-virtual {v0, v1, v2, v3}, Landroidx/camera/core/VideoCapture;->videoEncode(Landroidx/camera/core/VideoCapture$OnVideoSavedCallback;Ljava/lang/String;Landroid/util/Size;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 408
+    iget-object v0, p0, Landroidx/camera/core/VideoCapture$2;->val$postListener:Landroidx/camera/core/VideoCapture$OnVideoSavedCallback;
+
+    new-instance v1, Landroidx/camera/core/VideoCapture$OutputFileResults;
+
+    iget-object p0, p0, Landroidx/camera/core/VideoCapture$2;->this$0:Landroidx/camera/core/VideoCapture;
+
+    iget-object p0, p0, Landroidx/camera/core/VideoCapture;->mSavedVideoUri:Landroid/net/Uri;
+
+    invoke-direct {v1, p0}, Landroidx/camera/core/VideoCapture$OutputFileResults;-><init>(Landroid/net/Uri;)V
+
+    invoke-interface {v0, v1}, Landroidx/camera/core/VideoCapture$OnVideoSavedCallback;->onVideoSaved(Landroidx/camera/core/VideoCapture$OutputFileResults;)V
+
+    :cond_0
+    return-void
+.end method

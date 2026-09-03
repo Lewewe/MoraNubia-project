@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_placehold" android:layout_width="1.0px" android:layout_height="1.0px" />
+    <cn.nubia.redmagickyi.morachat.window.gameagent.view.output.EdgeFadeRecyclerView android:id="@id/layout_menu_ai_functions" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_8_dp" android:layout_marginTop="@dimen/ns_61_dp" />
+</FrameLayout>

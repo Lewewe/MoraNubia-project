@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/layout_root" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.nubia.redmagickyi.unity.view.UnitySurfaceView android:id="@id/unityview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:layout_gravity="center|bottom" android:id="@id/iv_main_switch_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/live_pc_main_switch_camera_margin_bottom" android:src="@mipmap/live_pc_main_switch_camera" />
+</FrameLayout>
